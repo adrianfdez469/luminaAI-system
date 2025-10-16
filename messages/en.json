@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "howItWorks": "How It Works",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Automate the Busywork. Get Your Time Back.",
+    "subtitle": "Transform your business with intelligent automation. Save hours every day on repetitive tasks and focus on what really matters.",
+    "cta": "Book Your Free Automation Audit"
+  },
+  "problem": {
+    "title": "Are You Losing Hours on Repetitive Tasks?",
+    "subtitle": "We know the struggle",
+    "point1": "Manually processing invoices and documents",
+    "point2": "Copying data between systems",
+    "point3": "Sending routine emails and follow-ups",
+    "point4": "Managing spreadsheets and reports",
+    "resume": "Average business wastes 20+ hours per week on repetitive tasks"
+  },
+  "solution": {
+    "title": "We Build Custom Automation Solutions",
+    "subtitle": "Tailored to your business needs",
+    "feature1Title": "Intelligent Workflows",
+    "feature1Desc": "Automate complex processes with AI-powered decision making",
+    "feature2Title": "Seamless Integration",
+    "feature2Desc": "Connect all your tools and systems in one unified workflow",
+    "feature3Title": "24/7 Automation",
+    "feature3Desc": "Your automations work around the clock, even when you don't",
+    "feature4Title": "ROI Tracking",
+    "feature4Desc": "See exactly how much time and money you're saving"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "4 simple steps to transform your business",
+    "step1Title": "1. Audit",
+    "step1Desc": "We analyze your workflows and identify automation opportunities",
+    "step2Title": "2. Design",
+    "step2Desc": "We create a custom automation strategy for your business",
+    "step3Title": "3. Build",
+    "step3Desc": "We develop and implement the automation solutions",
+    "step4Title": "4. Optimize",
+    "step4Desc": "We monitor, refine and scale your automations"
+  },
+  "audit": {
+    "title": "Get Your Free Automation Audit",
+    "subtitle": "Discover how much time and money you could save",
+    "benefit1": "Identify your biggest time-wasters",
+    "benefit2": "Get a custom automation roadmap",
+    "benefit3": "See potential ROI calculations",
+    "cta": "Schedule Free Audit"
+  },
+  "blog": {
+    "title": "From the Blog",
+    "subtitle": "Latest insights on automation and AI",
+    "readMore": "Read More"
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "subtitle": "Schedule a meeting or send us a message",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "dateLabel": "Preferred Date (optional)",
+    "submit": "Send Message",
+    "success": "Thank you! We'll get back to you soon.",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "john@company.com",
+    "messagePlaceholder": "Tell us about your automation needs..."
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "subtitle": "Get the latest automation tips and case studies delivered to your inbox",
+    "emailPlaceholder": "your@email.com",
+    "submit": "Subscribe",
+    "success": "Thanks for subscribing!"
+  },
+  "chatbot": {
+    "title": "Chat with us",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "welcomeMessage": "Hi! How can we help you today?",
+    "offlineMessage": "We're currently offline, but leave a message and we'll get back to you!"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
+

@@ -1,0 +1,106 @@
+'use client';
+
+import React from 'react';
+import { Box, Container, Grid, Typography, IconButton, Link } from '@mui/material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { useTranslations } from 'next-intl';
+import Logo from './Logo';
+
+export default function Footer() {
+  const t = useTranslations('footer');
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <Box
+      component="footer"
+      sx={{
+        py: 6,
+        px: 2,
+        mt: 'auto',
+        borderTop: '1px solid',
+        borderColor: 'divider',
+        backgroundColor: 'background.paper',
+      }}
+    >
+      <Container maxWidth="lg">
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={4}>
+            <Logo />
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
+              Intelligent automation solutions for modern businesses.
+            </Typography>
+            <Box sx={{ mt: 2 }}>
+              <IconButton
+                aria-label="LinkedIn"
+                color="primary"
+                href="https://linkedin.com"
+                target="_blank"
+              >
+                <LinkedInIcon />
+              </IconButton>
+              <IconButton
+                aria-label="Twitter"
+                color="primary"
+                href="https://twitter.com"
+                target="_blank"
+              >
+                <TwitterIcon />
+              </IconButton>
+              <IconButton
+                aria-label="GitHub"
+                color="primary"
+                href="https://github.com"
+                target="_blank"
+              >
+                <GitHubIcon />
+              </IconButton>
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <Typography variant="h6" gutterBottom>
+              Links
+            </Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+              <Link href="#home" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+                Home
+              </Link>
+              <Link href="#services" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+                Services
+              </Link>
+              <Link href="#blog" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+                Blog
+              </Link>
+              <Link href="#contact" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+                Contact
+              </Link>
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <Typography variant="h6" gutterBottom>
+              Legal
+            </Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+              <Link href="#" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+                {t('privacy')}
+              </Link>
+              <Link href="#" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+                {t('terms')}
+              </Link>
+            </Box>
+          </Grid>
+        </Grid>
+
+        <Box sx={{ mt: 4, pt: 3, borderTop: '1px solid', borderColor: 'divider' }}>
+          <Typography variant="body2" color="text.secondary" align="center">
+            © {currentYear} LuminaAI. {t('rights')}
+          </Typography>
+        </Box>
+      </Container>
+    </Box>
+  );
+}
+

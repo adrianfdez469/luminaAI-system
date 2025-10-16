@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "5 Tasks Every Business Should Automate Today",
+    "slug": "5-tasks-to-automate",
+    "excerpt": "Discover the most common business processes that are ripe for automation and how they can save you hours every week.",
+    "image": "/images/blog/automation-tasks.jpg",
+    "date": "2024-03-15",
+    "author": "Sarah Johnson",
+    "category": "Automation"
+  },
+  {
+    "id": 2,
+    "title": "How AI is Revolutionizing Small Business Operations",
+    "slug": "ai-small-business",
+    "excerpt": "Learn how artificial intelligence is making enterprise-level automation accessible to small and medium businesses.",
+    "image": "/images/blog/ai-business.jpg",
+    "date": "2024-03-10",
+    "author": "Michael Chen",
+    "category": "AI"
+  },
+  {
+    "id": 3,
+    "title": "ROI Case Study: How We Saved Company X 40 Hours Per Week",
+    "slug": "case-study-company-x",
+    "excerpt": "A detailed look at how we implemented custom automation workflows that transformed a growing startup's operations.",
+    "image": "/images/blog/case-study.jpg",
+    "date": "2024-03-05",
+    "author": "Emily Rodriguez",
+    "category": "Case Studies"
+  }
+]
+

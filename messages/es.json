@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "howItWorks": "Cómo Funciona",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Automatiza el Trabajo Repetitivo. Recupera Tu Tiempo.",
+    "subtitle": "Transforma tu negocio con automatización inteligente. Ahorra horas cada día en tareas repetitivas y enfócate en lo que realmente importa.",
+    "cta": "Agenda Tu Auditoría Gratuita"
+  },
+  "problem": {
+    "title": "¿Estás Perdiendo Horas en Tareas Repetitivas?",
+    "subtitle": "Conocemos el problema",
+    "point1": "Procesar facturas y documentos manualmente",
+    "point2": "Copiar datos entre sistemas",
+    "point3": "Enviar correos rutinarios y seguimientos",
+    "point4": "Gestionar hojas de cálculo e informes",
+    "resume": "Una empresa promedio desperdicia 20+ horas por semana en tareas repetitivas"
+  },
+  "solution": {
+    "title": "Construimos Soluciones de Automatización Personalizadas",
+    "subtitle": "Adaptadas a las necesidades de tu negocio",
+    "feature1Title": "Flujos Inteligentes",
+    "feature1Desc": "Automatiza procesos complejos con toma de decisiones impulsada por IA",
+    "feature2Title": "Integración Total",
+    "feature2Desc": "Conecta todas tus herramientas y sistemas en un flujo unificado",
+    "feature3Title": "Automatización 24/7",
+    "feature3Desc": "Tus automatizaciones trabajan sin descanso, incluso cuando tú no lo haces",
+    "feature4Title": "Seguimiento de ROI",
+    "feature4Desc": "Observa exactamente cuánto tiempo y dinero estás ahorrando"
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "subtitle": "4 simples pasos para transformar tu negocio",
+    "step1Title": "1. Auditoría",
+    "step1Desc": "Analizamos tus flujos de trabajo e identificamos oportunidades de automatización",
+    "step2Title": "2. Diseño",
+    "step2Desc": "Creamos una estrategia de automatización personalizada para tu negocio",
+    "step3Title": "3. Construcción",
+    "step3Desc": "Desarrollamos e implementamos las soluciones de automatización",
+    "step4Title": "4. Optimización",
+    "step4Desc": "Monitoreamos, refinamos y escalamos tus automatizaciones"
+  },
+  "audit": {
+    "title": "Obtén Tu Auditoría Gratuita",
+    "subtitle": "Descubre cuánto tiempo y dinero podrías ahorrar",
+    "benefit1": "Identifica tus mayores pérdidas de tiempo",
+    "benefit2": "Recibe una hoja de ruta de automatización personalizada",
+    "benefit3": "Visualiza cálculos de ROI potenciales",
+    "cta": "Agenda Auditoría Gratuita"
+  },
+  "blog": {
+    "title": "Desde el Blog",
+    "subtitle": "Últimas novedades sobre automatización e IA",
+    "readMore": "Leer Más"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "Agenda una reunión o envíanos un mensaje",
+    "nameLabel": "Nombre",
+    "emailLabel": "Email",
+    "messageLabel": "Mensaje",
+    "dateLabel": "Fecha Preferida (opcional)",
+    "submit": "Enviar Mensaje",
+    "success": "¡Gracias! Te contactaremos pronto.",
+    "namePlaceholder": "Juan Pérez",
+    "emailPlaceholder": "juan@empresa.com",
+    "messagePlaceholder": "Cuéntanos sobre tus necesidades de automatización..."
+  },
+  "newsletter": {
+    "title": "Mantente Actualizado",
+    "subtitle": "Recibe los últimos consejos de automatización y casos de estudio en tu correo",
+    "emailPlaceholder": "tu@email.com",
+    "submit": "Suscribirse",
+    "success": "¡Gracias por suscribirte!"
+  },
+  "chatbot": {
+    "title": "Chatea con nosotros",
+    "placeholder": "Escribe tu mensaje...",
+    "send": "Enviar",
+    "welcomeMessage": "¡Hola! ¿Cómo podemos ayudarte hoy?",
+    "offlineMessage": "Actualmente estamos desconectados, pero deja un mensaje y te responderemos pronto"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  }
+}
+
