@@ -1,12 +1,12 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { ThemeProvider } from '@/lib/ThemeProvider';
-import { locales } from '@/i18n';
+import { routing } from '@/i18n/routing';
 import '@/styles/globals.css';
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export const metadata: Metadata = {
@@ -27,8 +27,12 @@ export const metadata: Metadata = {
     title: 'LuminaAI - Intelligent Business Automation',
     description: 'Automate the busywork. Get your time back.',
   },
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default async function LocaleLayout({
@@ -38,6 +42,9 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  // Enable static rendering
+  setRequestLocale(locale);
+
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
