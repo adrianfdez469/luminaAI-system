@@ -40,9 +40,12 @@ export default function Header() {
 
   const navItems = [
     { label: t('home'), href: '#home' },
-    { label: t('services'), href: '#services' },
+    { label: t('solution'), href: '#solution' },  
     { label: t('howItWorks'), href: '#how-it-works' },
-    { label: t('blog'), href: '#blog' },
+    { label: t('testimonials'), href: '#testimonials' },
+    { label: t('audit'), href: '#audit' },
+    { label: t('offer'), href: '#offer' },
+    // { label: t('blog'), href: '#blog' },
     { label: t('contact'), href: '#contact' },
   ];
 

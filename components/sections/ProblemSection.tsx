@@ -21,7 +21,7 @@ export default function ProblemSection() {
   ];
 
   return (
-    <Box sx={{ py: 10, backgroundColor: 'background.default' }}>
+    <Box sx={{ py: { xs: 6, md: 10 }, backgroundColor: 'background.default' }}>
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -29,11 +29,22 @@ export default function ProblemSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <Box sx={{ textAlign: 'center', mb: 6 }}>
-            <Typography variant="h2" sx={{ mb: 2, fontWeight: 700 }}>
+          <Box sx={{ textAlign: 'center', mb: { xs: 4, md: 6 }, px: { xs: 2, sm: 0 } }}>
+            <Typography 
+              variant="h2" 
+              sx={{ 
+                mb: { xs: 1.5, md: 2 }, 
+                fontWeight: 700,
+                fontSize: { xs: '1.75rem', sm: '2.25rem', md: '2.75rem', lg: '3rem' }
+              }}
+            >
               {t('title')}
             </Typography>
-            <Typography variant="h6" color="text.secondary">
+            <Typography 
+              variant="h6" 
+              color="text.secondary"
+              sx={{ fontSize: { xs: '1rem', sm: '1.1rem', md: '1.25rem' } }}
+            >
               {t('subtitle')}
             </Typography>
           </Box>
@@ -51,11 +62,11 @@ export default function ProblemSection() {
                 <Paper
                   elevation={0}
                   sx={{
-                    p: 3,
+                    p: { xs: 2, md: 3 },
                     height: '100%',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: 2,
+                    gap: { xs: 1.5, md: 2 },
                     border: '1px solid',
                     borderColor: 'divider',
                     transition: 'all 0.3s',
@@ -68,8 +79,8 @@ export default function ProblemSection() {
                 >
                   <Box
                     sx={{
-                      width: 56,
-                      height: 56,
+                      width: { xs: 48, md: 56 },
+                      height: { xs: 48, md: 56 },
                       borderRadius: '12px',
                       display: 'flex',
                       alignItems: 'center',
@@ -81,7 +92,13 @@ export default function ProblemSection() {
                   >
                     {problem.icon}
                   </Box>
-                  <Typography variant="body1" sx={{ fontWeight: 500 }}>
+                  <Typography 
+                    variant="body1" 
+                    sx={{ 
+                      fontWeight: 500,
+                      fontSize: { xs: '0.95rem', md: '1rem' }
+                    }}
+                  >
                     {problem.text}
                   </Typography>
                 </Paper>
@@ -90,7 +107,7 @@ export default function ProblemSection() {
           ))}
         </Grid>
 
-        <Box sx={{ textAlign: 'center', mt: 6 }}>
+        <Box sx={{ textAlign: 'center', mt: { xs: 4, md: 6 }, px: { xs: 2, sm: 0 } }}>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -100,9 +117,10 @@ export default function ProblemSection() {
             <Box
               sx={{
                 display: 'inline-flex',
+                flexDirection: { xs: 'column', sm: 'row' },
                 alignItems: 'center',
-                gap: 2,
-                p: 3,
+                gap: { xs: 1.5, md: 2 },
+                p: { xs: 2, md: 3 },
                 backgroundColor: (theme) =>
                   theme.palette.mode === 'light'
                     ? 'rgba(255, 152, 0, 0.08)'
@@ -119,8 +137,15 @@ export default function ProblemSection() {
                     : 'rgba(255, 171, 0, 0.25)',
               }}
             >
-              <AccessTimeIcon sx={{ fontSize: 40 }} />
-              <Typography variant="h5" sx={{ fontWeight: 600 }}>
+              <AccessTimeIcon sx={{ fontSize: { xs: 32, md: 40 } }} />
+              <Typography 
+                variant="h5" 
+                sx={{ 
+                  fontWeight: 600,
+                  fontSize: { xs: '1.1rem', sm: '1.25rem', md: '1.5rem' },
+                  textAlign: { xs: 'center', sm: 'left' }
+                }}
+              >
                 {t('resume')}
               </Typography>
             </Box>

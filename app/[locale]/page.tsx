@@ -7,7 +7,9 @@ import HeroSection from '@/components/sections/HeroSection';
 import ProblemSection from '@/components/sections/ProblemSection';
 import SolutionSection from '@/components/sections/SolutionSection';
 import HowItWorksSection from '@/components/sections/HowItWorksSection';
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import AuditSection from '@/components/sections/AuditSection';
+import OfferSection from '@/components/sections/OfferSection';
 import BlogSection from '@/components/sections/BlogSection';
 import ContactSection from '@/components/sections/ContactSection';
 import NewsletterSection from '@/components/sections/NewsletterSection';
@@ -25,8 +27,10 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <ProblemSection />
         <SolutionSection />
         <HowItWorksSection />
+        <TestimonialsSection />
         <AuditSection />
-        <BlogSection />
+        <OfferSection />
+        {/* <BlogSection /> */}
         <NewsletterSection />
         <ContactSection />
       </main>

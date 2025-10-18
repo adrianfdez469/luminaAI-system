@@ -44,7 +44,7 @@ export default function NewsletterSection() {
   };
 
   return (
-    <Box sx={{ py: 10, backgroundColor: 'background.default' }}>
+    <Box sx={{ py: { xs: 6, md: 10 }, backgroundColor: 'background.default' }}>
       <Container maxWidth="md">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -55,7 +55,8 @@ export default function NewsletterSection() {
           <Paper
             elevation={0}
             sx={{
-              p: 6,
+              p: { xs: 4, md: 6 },
+              mx: { xs: 2, sm: 0 },
               textAlign: 'center',
               border: '2px solid',
               borderColor: 'primary.main',
@@ -68,8 +69,8 @@ export default function NewsletterSection() {
           >
             <Box
               sx={{
-                width: 80,
-                height: 80,
+                width: { xs: 70, md: 80 },
+                height: { xs: 70, md: 80 },
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -77,17 +78,34 @@ export default function NewsletterSection() {
                 backgroundColor: 'primary.main',
                 color: 'white',
                 margin: '0 auto',
-                mb: 3,
+                mb: { xs: 2, md: 3 },
               }}
             >
-              <MailOutlineIcon sx={{ fontSize: 40 }} />
+              <MailOutlineIcon sx={{ fontSize: { xs: 32, md: 40 } }} />
             </Box>
 
-            <Typography variant="h3" sx={{ mb: 2, fontWeight: 700 }}>
+            <Typography 
+              variant="h3" 
+              sx={{ 
+                mb: { xs: 1.5, md: 2 }, 
+                fontWeight: 700,
+                fontSize: { xs: '1.75rem', sm: '2rem', md: '2.5rem' }
+              }}
+            >
               {t('title')}
             </Typography>
 
-            <Typography variant="body1" color="text.secondary" sx={{ mb: 4, maxWidth: 600, mx: 'auto' }}>
+            <Typography 
+              variant="body1" 
+              color="text.secondary" 
+              sx={{ 
+                mb: { xs: 3, md: 4 }, 
+                maxWidth: 600, 
+                mx: 'auto',
+                fontSize: { xs: '0.95rem', md: '1rem' },
+                lineHeight: 1.6
+              }}
+            >
               {t('subtitle')}
             </Typography>
 

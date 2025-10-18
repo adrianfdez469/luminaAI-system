@@ -53,7 +53,7 @@ export default function ContactSection() {
   };
 
   return (
-    <Box id="contact" sx={{ py: 10, backgroundColor: 'background.default' }}>
+    <Box id="contact" sx={{ py: { xs: 6, md: 10 }, backgroundColor: 'background.default' }}>
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -61,11 +61,22 @@ export default function ContactSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <Box sx={{ textAlign: 'center', mb: 6 }}>
-            <Typography variant="h2" sx={{ mb: 2, fontWeight: 700 }}>
+          <Box sx={{ textAlign: 'center', mb: { xs: 4, md: 6 }, px: { xs: 2, sm: 0 } }}>
+            <Typography 
+              variant="h2" 
+              sx={{ 
+                mb: { xs: 1.5, md: 2 }, 
+                fontWeight: 700,
+                fontSize: { xs: '1.75rem', sm: '2.25rem', md: '2.75rem', lg: '3rem' }
+              }}
+            >
               {t('title')}
             </Typography>
-            <Typography variant="h6" color="text.secondary">
+            <Typography 
+              variant="h6" 
+              color="text.secondary"
+              sx={{ fontSize: { xs: '1rem', sm: '1.1rem', md: '1.25rem' } }}
+            >
               {t('subtitle')}
             </Typography>
           </Box>
@@ -79,7 +90,7 @@ export default function ContactSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Paper elevation={0} sx={{ p: 4, border: '1px solid', borderColor: 'divider' }}>
+              <Paper elevation={0} sx={{ p: { xs: 3, md: 4 }, border: '1px solid', borderColor: 'divider' }}>
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>

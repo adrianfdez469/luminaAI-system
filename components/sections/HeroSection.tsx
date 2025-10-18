@@ -17,19 +17,43 @@ export default function HeroSection() {
     }
   };
 
+  // Helper function to render text with bold parts between asterisks
+  const renderTextWithBold = (text: string) => {
+    const parts = text.split('*');
+    return parts.map((part, index) => {
+      // Odd indices are between asterisks, so they should be bold
+      if (index % 2 === 1) {
+        return (
+          <Box
+            key={index}
+            component="span"
+            sx={{ fontWeight: 700 }}
+          >
+            {part}
+          </Box>
+        );
+      }
+      return <React.Fragment key={index}>{part}</React.Fragment>;
+    });
+  };
+
+
   return (
     <Box
       id="home"
       sx={{
-        minHeight: '90vh',
+        minHeight: { xs: '85vh', md: '90vh' },
         display: 'flex',
         alignItems: 'center',
-        background:
-          theme.palette.mode === 'light'
-            ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
-            : 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
+        pt: { xs: 8, md: 0 },
+        pb: { xs: 6, md: 0 },
         position: 'relative',
         overflow: 'hidden',
+        backgroundImage: 'url(/images/hero-bg.avif)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        // Dark overlay for better text contrast
         '&::before': {
           content: '""',
           position: 'absolute',
@@ -37,13 +61,27 @@ export default function HeroSection() {
           left: 0,
           right: 0,
           bottom: 0,
+          background:
+            theme.palette.mode === 'light'
+              ? 'linear-gradient(135deg, rgba(102, 126, 234, 0.92) 0%, rgba(118, 75, 162, 0.92) 100%)'
+              : 'linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%)',
+          zIndex: 1,
+        },
+        // Additional gradient overlay for depth
+        '&::after': {
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
           backgroundImage:
-            'radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.3) 0%, transparent 50%)',
-          opacity: 0.6,
+            'radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.2) 0%, transparent 50%)',
+          zIndex: 2,
         },
       }}
     >
-      <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
+      <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 3 }}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -53,10 +91,11 @@ export default function HeroSection() {
             <Typography
               variant="h1"
               sx={{
-                mb: 3,
+                mb: { xs: 2, md: 3 },
                 fontWeight: 800,
-                fontSize: { xs: '2.5rem', md: '4rem', lg: '4.5rem' },
-                textShadow: '0 2px 10px rgba(0,0,0,0.2)',
+                fontSize: { xs: '2rem', sm: '2.5rem', md: '3.5rem', lg: '4.5rem' },
+                textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)',
+                lineHeight: { xs: 1.2, md: 1.1 },
               }}
             >
               {t('title')}
@@ -65,18 +104,53 @@ export default function HeroSection() {
             <Typography
               variant="h5"
               sx={{
-                mb: 5,
+                mb: { xs: 1.5, md: 2 },
                 maxWidth: '800px',
                 mx: 'auto',
-                fontSize: { xs: '1.1rem', md: '1.5rem' },
+                fontSize: { xs: '1rem', sm: '1.1rem', md: '1.3rem', lg: '1.5rem' },
                 fontWeight: 400,
-                opacity: 0.95,
-                lineHeight: 1.6,
+                lineHeight: { xs: 1.5, md: 1.6 },
+                textAlign: { xs: 'center', sm: 'left' },
+                px: { xs: 2, sm: 0 },
+                textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 1px 4px rgba(0,0,0,0.3)',
               }}
             >
-              {t('subtitle')}
+              {renderTextWithBold(t('subtitle'))}
             </Typography>
 
+            <Typography
+              variant="h5"
+              sx={{
+                mb: { xs: 1.5, md: 2 },
+                maxWidth: '800px',
+                mx: 'auto',
+                fontSize: { xs: '1rem', sm: '1.1rem', md: '1.3rem', lg: '1.5rem' },
+                fontWeight: 400,
+                lineHeight: { xs: 1.5, md: 1.6 },
+                textAlign: { xs: 'center', sm: 'left' },
+                px: { xs: 2, sm: 0 },
+                textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 1px 4px rgba(0,0,0,0.3)',
+              }}
+            >
+              {renderTextWithBold(t('subtitle2'))}
+            </Typography>
+
+            <Typography
+              variant="h5"
+              sx={{
+                mb: { xs: 3, md: 5 },
+                maxWidth: '800px',
+                mx: 'auto',
+                fontSize: { xs: '1rem', sm: '1.1rem', md: '1.3rem', lg: '1.5rem' },
+                fontWeight: 400,
+                lineHeight: { xs: 1.5, md: 1.6 },
+                textAlign: { xs: 'center', sm: 'left' },
+                px: { xs: 2, sm: 0 },
+                textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 1px 4px rgba(0,0,0,0.3)',
+              }}
+            >
+              {renderTextWithBold(t('subtitle3'))}
+            </Typography>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -88,9 +162,9 @@ export default function HeroSection() {
                 onClick={handleCTAClick}
                 startIcon={<RocketLaunchIcon />}
                 sx={{
-                  py: 2,
-                  px: 4,
-                  fontSize: '1.2rem',
+                  py: { xs: 1.5, md: 2 },
+                  px: { xs: 3, md: 4 },
+                  fontSize: { xs: '1rem', md: '1.2rem' },
                   backgroundColor: 'white',
                   color: 'primary.main',
                   fontWeight: 700,
@@ -108,7 +182,7 @@ export default function HeroSection() {
         </motion.div>
       </Container>
 
-      {/* Decorative elements */}
+      {/* Decorative elements with higher z-index */}
       <Box
         sx={{
           position: 'absolute',
@@ -117,8 +191,9 @@ export default function HeroSection() {
           width: 300,
           height: 300,
           borderRadius: '50%',
-          background: 'rgba(236, 72, 153, 0.2)',
+          background: 'rgba(236, 72, 153, 0.15)',
           filter: 'blur(60px)',
+          zIndex: 2,
         }}
       />
       <Box
@@ -129,8 +204,9 @@ export default function HeroSection() {
           width: 300,
           height: 300,
           borderRadius: '50%',
-          background: 'rgba(99, 102, 241, 0.2)',
+          background: 'rgba(99, 102, 241, 0.15)',
           filter: 'blur(60px)',
+          zIndex: 2,
         }}
       />
     </Box>

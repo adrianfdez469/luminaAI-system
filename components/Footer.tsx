@@ -4,6 +4,8 @@ import React from 'react';
 import { Box, Container, Grid, Typography, IconButton, Link } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { useTranslations } from 'next-intl';
 import Logo from './Logo';
@@ -32,6 +34,26 @@ export default function Footer() {
               Intelligent automation solutions for modern businesses.
             </Typography>
             <Box sx={{ mt: 2 }}>
+
+              
+              <IconButton
+                aria-label="Facebook"
+                color="primary"
+                href="https://facebook.com"
+                target="_blank"
+              >
+                <FacebookIcon />
+              </IconButton>
+
+              <IconButton
+                aria-label="Instagram"
+                color="primary"
+                href="https://www.instagram.com/lumina_ai_uk"
+                target="_blank"
+              >
+                <InstagramIcon />
+              </IconButton>
+              
               <IconButton
                 aria-label="LinkedIn"
                 color="primary"
@@ -39,22 +61,6 @@ export default function Footer() {
                 target="_blank"
               >
                 <LinkedInIcon />
-              </IconButton>
-              <IconButton
-                aria-label="Twitter"
-                color="primary"
-                href="https://twitter.com"
-                target="_blank"
-              >
-                <TwitterIcon />
-              </IconButton>
-              <IconButton
-                aria-label="GitHub"
-                color="primary"
-                href="https://github.com"
-                target="_blank"
-              >
-                <GitHubIcon />
               </IconButton>
             </Box>
           </Grid>
@@ -70,9 +76,9 @@ export default function Footer() {
               <Link href="#services" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
                 Services
               </Link>
-              <Link href="#blog" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+              {/* <Link href="#blog" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
                 Blog
-              </Link>
+              </Link> */}
               <Link href="#contact" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
                 Contact
               </Link>
