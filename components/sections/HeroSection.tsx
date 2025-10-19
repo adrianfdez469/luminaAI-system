@@ -91,7 +91,7 @@ export default function HeroSection() {
             <Typography
               variant="h1"
               sx={{
-                mb: { xs: 2, md: 3 },
+                mb: { xs: 1.5, md: 2 },
                 fontWeight: 800,
                 fontSize: { xs: '2rem', sm: '2.5rem', md: '3.5rem', lg: '4.5rem' },
                 textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)',
@@ -99,6 +99,24 @@ export default function HeroSection() {
               }}
             >
               {t('title')}
+            </Typography>
+
+            {/* Description */}
+            <Typography
+              variant="h6"
+              sx={{
+                mb: { xs: 3, md: 4 },
+                maxWidth: '800px',
+                mx: 'auto',
+                fontSize: { xs: '0.95rem', sm: '1.05rem', md: '1.15rem' },
+                fontWeight: 500,
+                lineHeight: 1.6,
+                px: { xs: 2, sm: 0 },
+                textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 1px 4px rgba(0,0,0,0.3)',
+                opacity: 0.95,
+              }}
+            >
+              {t('description')}
             </Typography>
 
             <Typography
@@ -118,39 +136,6 @@ export default function HeroSection() {
               {renderTextWithBold(t('subtitle'))}
             </Typography>
 
-            <Typography
-              variant="h5"
-              sx={{
-                mb: { xs: 1.5, md: 2 },
-                maxWidth: '800px',
-                mx: 'auto',
-                fontSize: { xs: '1rem', sm: '1.1rem', md: '1.3rem', lg: '1.5rem' },
-                fontWeight: 400,
-                lineHeight: { xs: 1.5, md: 1.6 },
-                textAlign: { xs: 'center', sm: 'left' },
-                px: { xs: 2, sm: 0 },
-                textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 1px 4px rgba(0,0,0,0.3)',
-              }}
-            >
-              {renderTextWithBold(t('subtitle2'))}
-            </Typography>
-
-            <Typography
-              variant="h5"
-              sx={{
-                mb: { xs: 3, md: 5 },
-                maxWidth: '800px',
-                mx: 'auto',
-                fontSize: { xs: '1rem', sm: '1.1rem', md: '1.3rem', lg: '1.5rem' },
-                fontWeight: 400,
-                lineHeight: { xs: 1.5, md: 1.6 },
-                textAlign: { xs: 'center', sm: 'left' },
-                px: { xs: 2, sm: 0 },
-                textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 1px 4px rgba(0,0,0,0.3)',
-              }}
-            >
-              {renderTextWithBold(t('subtitle3'))}
-            </Typography>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -162,6 +147,7 @@ export default function HeroSection() {
                 onClick={handleCTAClick}
                 startIcon={<RocketLaunchIcon />}
                 sx={{
+                  mt: { xs: 2, md: 3 },
                   py: { xs: 1.5, md: 2 },
                   px: { xs: 3, md: 4 },
                   fontSize: { xs: '1rem', md: '1.2rem' },

@@ -77,7 +77,7 @@ export default function HowItWorksSection() {
           </Box>
         </motion.div>
 
-        <Grid container spacing={4} sx={{ position: 'relative' }}>
+        <Grid container spacing={4} sx={{ position: 'relative' }} alignItems="stretch">
           {/* Connecting line for desktop */}
           <Box
             sx={{
@@ -94,22 +94,26 @@ export default function HowItWorksSection() {
           />
 
           {steps.map((step, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index} sx={{ position: 'relative', zIndex: 1 }}>
+            <Grid item xs={12} sm={6} md={3} key={index} sx={{ position: 'relative', zIndex: 1, display: 'flex' }}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
+                style={{ width: '100%', display: 'flex' }}
               >
                 <Paper
                   elevation={0}
                   sx={{
                     p: { xs: 2.5, md: 3 },
-                    height: '100%',
+                    width: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
                     textAlign: 'center',
                     border: '2px solid',
                     borderColor: 'divider',
                     transition: 'all 0.3s',
+                    minHeight: { md: '280px' },
                     '&:hover': {
                       borderColor: step.color,
                       transform: 'scale(1.05)',
@@ -150,7 +154,11 @@ export default function HowItWorksSection() {
                   <Typography 
                     variant="body2" 
                     color="text.secondary"
-                    sx={{ fontSize: { xs: '0.9rem', md: '0.95rem' }, lineHeight: 1.6 }}
+                    sx={{ 
+                      fontSize: { xs: '0.9rem', md: '0.95rem' }, 
+                      lineHeight: 1.6,
+                      flexGrow: 1
+                    }}
                   >
                     {step.description}
                   </Typography>

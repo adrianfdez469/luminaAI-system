@@ -3,18 +3,18 @@
     "home": "Inicio",
     "solution": "Soluciones",
     "howItWorks": "Cómo Funciona",
+    "testimonials": "Testimonios",
+    "about": "Quiénes Somos",
     "audit": "Auditoría",
     "offer": "Oferta",
     "services": "Servicios",
     "blog": "Blog",
-    "contact": "Contacto",
-    "testimonials": "Testimonios"
+    "contact": "Contacto"
   },
   "hero": {
-    "title": "Automatiza el Trabajo Repetitivo. Recupera Tu Tiempo.",
-    "subtitle": "Sabemos lo que es hacer *malabares con correos, reservas y la administración* diaria.",
-    "subtitle2": "*Automatizamos esas tareas repetitivas* para que no tengas que pensarlo dos veces.",
-    "subtitle3": "Tu *tiempo vale*: úsalo para crecer... o simplemente para respirar.",
+    "title": "Automatiza tu negocio. Optimiza tu futuro.",
+    "description": "En LuminaAI ayudamos a empresas a automatizar procesos clave con inteligencia artificial, reduciendo costos operativos y mejorando la eficiencia.",
+    "subtitle": "Sabemos lo que es hacer *malabares con correos, reservas y la administración* diaria. *Automatizamos esas tareas repetitivas* para que no tengas que pensarlo dos veces. Tu *tiempo vale*: úsalo para crecer... o simplemente para respirar.",
     "cta": "Agenda Tu Auditoría Gratuita"
   },
   "problem": {
@@ -241,6 +241,22 @@
     "testimonial3Name": "Emma Williams",
     "testimonial3Role": "Consultora",
     "testimonial3Text": "Era escéptica al principio, pero la auditoría de automatización me mostró exactamente dónde estaba perdiendo tiempo. El ROI fue inmediato e impresionante."
+  },
+  "about": {
+    "title": "Quiénes Somos",
+    "subtitle": "Conoce al equipo detrás de LuminaAI",
+    "earlyAdopter": "El futuro de los negocios es la automatización impulsada por IA — todas las empresas funcionarán así. Pero los early adopters son quienes marcarán la diferencia, obteniendo ventaja competitiva hoy mientras otros se ponen al día mañana.",
+    "person1Name": "Adrián Fernández",
+    "person1Role": "Fundador y Desarrollador Principal",
+    "person1Bio": "Desarrollador de software con más de 10 años de experiencia creando aplicaciones. Con el surgimiento de la IA, me he especializado en crear flujos de automatización de procesos que se integran perfectamente con la inteligencia artificial para transformar cómo operan los negocios.",
+    "person1Fun": "Dato curioso: Adicto al gym 💪",
+    "person1LinkedIn": "https://www.linkedin.com/in/adrian-fernandez",
+    "person2Name": "Lisset Hernández",
+    "person2Role": "Co-Fundadora y Directora de Negocios",
+    "person2Bio": "Especialista en marketing, gestión de negocios y relaciones públicas. Me aseguro de que nuestras soluciones de automatización no solo funcionen técnicamente, sino que también se alineen perfectamente con los objetivos comerciales y estrategias de crecimiento de nuestros clientes.",
+    "person2Fun": "Dato curioso: Orgullosa mamá 👶",
+    "person2LinkedIn": "https://www.linkedin.com/in/lisset-hernandez",
+    "connectLinkedIn": "Conectar en LinkedIn"
   },
   "audit": {
     "title": "Qué Obtendrás de Tu Auditoría Gratuita de Automatización con IA",

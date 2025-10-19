@@ -3,17 +3,17 @@
     "home": "Home",
     "solution": "Solutions",
     "howItWorks": "How It Works",
+    "testimonials": "Testimonials",
+    "about": "About Us",
     "audit": "Audit",
     "offer": "Offer",
     "blog": "Blog",
-    "contact": "Contact",
-    "testimonials": "Testimonials"
+    "contact": "Contact"
   },
   "hero": {
-    "title": "Automate the Busywork. Get Your Time Back.",
-    "subtitle": "We know what it's like to *juggle emails, bookings, and daily admin*.",
-    "subtitle2": "*We automate those repetitive tasks* so you don’t have to think twice.",
-    "subtitle3": "Your *time matters* — use it to grow… or simply to breathe.",
+    "title": "Automate your business. Optimize your future.",
+    "description": "At LuminaAI, we help businesses automate key processes with artificial intelligence, reducing operational costs and improving efficiency.",
+    "subtitle": "We know what it's like to *juggle emails, bookings, and daily admin*. *We automate those repetitive tasks* so you don't have to think twice. Your *time matters* — use it to grow… or simply to breathe.",
     "cta": "Book Your Free Automation Audit"
   },
   "problem": {
@@ -240,6 +240,22 @@
     "testimonial3Name": "Emma Williams",
     "testimonial3Role": "Consultant",
     "testimonial3Text": "I was skeptical at first, but the automation audit showed me exactly where I was wasting time. The ROI was immediate and impressive."
+  },
+  "about": {
+    "title": "Who We Are",
+    "subtitle": "Meet the team behind LuminaAI",
+    "earlyAdopter": "The future of business is automation powered by AI — every company will operate this way. But early adopters are the ones who will mark the difference, gaining a competitive edge today while others catch up tomorrow.",
+    "person1Name": "Adrián Fernández",
+    "person1Role": "Founder & Lead Developer",
+    "person1Bio": "Software developer with over 10 years of experience building applications. With the rise of AI, I've specialized in creating automation workflows that integrate seamlessly with artificial intelligence to transform how businesses operate.",
+    "person1Fun": "Fun fact: Gym addict 💪",
+    "person1LinkedIn": "https://www.linkedin.com/in/adrian-fernandez",
+    "person2Name": "Lisset Hernández",
+    "person2Role": "Co-Founder & Business Director",
+    "person2Bio": "Specialist in marketing, business management, and public relations. I ensure our automation solutions not only work technically but also align perfectly with our clients' business goals and growth strategies.",
+    "person2Fun": "Fun fact: Proud mom 👶",
+    "person2LinkedIn": "https://www.linkedin.com/in/lisset-hernandez",
+    "connectLinkedIn": "Connect on LinkedIn"
   },
   "audit": {
     "title": "What You'll Get from Your Free AI Automation Audit",
