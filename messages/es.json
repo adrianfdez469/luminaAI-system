@@ -24,6 +24,8 @@
     "point2": "Copiar datos entre sistemas",
     "point3": "Enviar correos rutinarios y seguimientos",
     "point4": "Gestionar hojas de cálculo e informes",
+    "point5": "Demoras en responder las consultas de los clientes",
+    "point6": "Dificultad para organizar y dar seguimiento a las citas de clientes",
     "resume": "Una empresa promedio desperdicia 20+ horas por semana en tareas repetitivas"
   },
   "solution": {
@@ -248,14 +250,14 @@
     "earlyAdopter": "El futuro de los negocios es la automatización impulsada por IA — todas las empresas funcionarán así. Pero los early adopters son quienes marcarán la diferencia, obteniendo ventaja competitiva hoy mientras otros se ponen al día mañana.",
     "person1Name": "Adrián Fernández",
     "person1Role": "Fundador y Desarrollador Principal",
-    "person1Bio": "Desarrollador de software con más de 10 años de experiencia creando aplicaciones. Con el surgimiento de la IA, me he especializado en crear flujos de automatización de procesos que se integran perfectamente con la inteligencia artificial para transformar cómo operan los negocios.",
+    "person1Bio": "Soy Adrian Fernandez, ingeniero de software con más de 10 años desarrolando aplicaciones. Con el surgimiento de la IA, me he especializado en crear flujos de automatización de procesos que se integran perfectamente con la inteligencia artificial para transformar cómo operan los negocios.",
     "person1Fun": "Dato curioso: Adicto al gym 💪",
     "person1LinkedIn": "https://www.linkedin.com/in/adrian-fernandez",
-    "person2Name": "Lisset Hernández",
+    "person2Name": "Liset Hernández",
     "person2Role": "Co-Fundadora y Directora de Negocios",
-    "person2Bio": "Especialista en marketing, gestión de negocios y relaciones públicas. Me aseguro de que nuestras soluciones de automatización no solo funcionen técnicamente, sino que también se alineen perfectamente con los objetivos comerciales y estrategias de crecimiento de nuestros clientes.",
+    "person2Bio": "Soy Liset Hernandez, una emprendedora radicada en el Reino Unido, apasionada por usar la IA para simplificar y humanizar los negocios. Tras años trabajando en diferentes sectores, descubrí cómo la automatización puede transformar no solo los flujos de trabajo, sino también la vida de las personas, liberando tiempo para la creatividad, el crecimiento y el propósito.",
     "person2Fun": "Dato curioso: Orgullosa mamá 👶",
-    "person2LinkedIn": "https://www.linkedin.com/in/lisset-hernandez",
+    "person2LinkedIn": "https://www.linkedin.com/in/creativalilo",
     "connectLinkedIn": "Conectar en LinkedIn"
   },
   "audit": {

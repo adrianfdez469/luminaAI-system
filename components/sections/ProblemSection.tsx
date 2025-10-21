@@ -9,6 +9,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import EmailIcon from '@mui/icons-material/Email';
 import TableChartIcon from '@mui/icons-material/TableChart';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 
 export default function ProblemSection() {
   const t = useTranslations('problem');
@@ -18,6 +19,8 @@ export default function ProblemSection() {
     { icon: <ContentCopyIcon />, text: t('point2') },
     { icon: <EmailIcon />, text: t('point3') },
     { icon: <TableChartIcon />, text: t('point4') },
+    { icon: <AccessTimeIcon />, text: t('point5') },
+    { icon: <EventAvailableIcon />, text: t('point6') },
   ];
 
   return (

@@ -35,7 +35,7 @@ export default function AboutSection() {
       icon: <BusinessCenterIcon sx={{ fontSize: 32 }} />,
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       imagePlaceholder: 'LH',
-      imageName: 'lisset.jpeg',
+      imageName: 'liset.jpeg',
     },
   ];
 
