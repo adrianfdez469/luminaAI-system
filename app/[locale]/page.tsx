@@ -9,6 +9,7 @@ import SolutionSection from '@/components/sections/SolutionSection';
 import HowItWorksSection from '@/components/sections/HowItWorksSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import AboutSection from '@/components/sections/AboutSection';
+import TrustSection from '@/components/sections/TrustSection';
 import AuditSection from '@/components/sections/AuditSection';
 import OfferSection from '@/components/sections/OfferSection';
 import BlogSection from '@/components/sections/BlogSection';
@@ -30,6 +31,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <HowItWorksSection />
         <TestimonialsSection />
         <AboutSection />
+        <TrustSection />
         <AuditSection />
         <OfferSection />
         {/* <BlogSection /> */}

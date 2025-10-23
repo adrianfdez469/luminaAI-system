@@ -1,14 +1,21 @@
 {
   "nav": {
     "home": "Home",
+    "services": "Services",
     "solution": "Solutions",
     "howItWorks": "How It Works",
     "testimonials": "Testimonials",
-    "about": "About Us",
+    "about": "About",
     "audit": "Audit",
+    "auditCTA": "Free Audit",
     "offer": "Offer",
     "blog": "Blog",
     "contact": "Contact"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "hero": {
     "title": "Automate your business. Optimize your future.",
@@ -254,10 +261,18 @@
     "person1LinkedIn": "https://www.linkedin.com/in/adrian-fernandez",
     "person2Name": "Liset Hernandez",
     "person2Role": "Co-Founder & Business Director",
-    "person2Bio": "I’m Liset Hernandez, an entrepreneur based in the UK, passionate about using AI to make business simple and human again. After years of working across different industries, I discovered how automation can transform not just workflows, but people’s lives — freeing time for creativity, growth, and purpose.",
+    "person2Bio": "I'm Liset Hernandez, an entrepreneur based in the UK, passionate about using AI to make business simple and human again. After years of working across different industries, I discovered how automation can transform not just workflows, but people's lives — freeing time for creativity, growth, and purpose.",
     "person2Fun": "Fun fact: Proud mom 👶",
     "person2LinkedIn": "https://www.linkedin.com/in/lisset-hernandez",
     "connectLinkedIn": "Connect on LinkedIn"
+  },
+  "trust": {
+    "title": "Your Privacy, Our Priority",
+    "subtitle": "Automation built on security and transparency",
+    "mainText": "At Lumina AI, we believe automation should make life simpler — not risk your privacy. That's why every tool we use, from n8n to our hosting provider Vercel, follows strict GDPR standards. Your data stays safe, encrypted, and handled only by authorised professionals.",
+    "badge1": "GDPR Compliant",
+    "badge2": "End-to-End Encryption",
+    "badge3": "Secure Infrastructure"
   },
   "audit": {
     "title": "What You'll Get from Your Free AI Automation Audit",
@@ -326,8 +341,23 @@
   },
   "footer": {
     "rights": "All rights reserved.",
+    "description": "Intelligent automation solutions for modern businesses.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "gdprNotice": "We respect your privacy. Lumina AI complies with the UK GDPR and processes all personal data securely and transparently. Read our Privacy Policy for more details.",
+    "links": "Links",
+    "legal": "Legal",
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "content": "Privacy policy content will be added here."
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "content": "Terms of service content will be added here."
   }
 }
 

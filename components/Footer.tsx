@@ -7,11 +7,12 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Logo from './Logo';
 
 export default function Footer() {
   const t = useTranslations('footer');
+  const locale = useLocale();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -31,7 +32,7 @@ export default function Footer() {
           <Grid item xs={12} md={4}>
             <Logo />
             <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
-              Intelligent automation solutions for modern businesses.
+              {t('description')}
             </Typography>
             <Box sx={{ mt: 2 }}>
 
@@ -67,33 +68,33 @@ export default function Footer() {
 
           <Grid item xs={12} md={4}>
             <Typography variant="h6" gutterBottom>
-              Links
+              {t('links')}
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
               <Link href="#home" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
-                Home
+                {t('home')}
               </Link>
-              <Link href="#services" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
-                Services
+              <Link href="#solution" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+                {t('services')}
               </Link>
               {/* <Link href="#blog" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
                 Blog
               </Link> */}
               <Link href="#contact" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
-                Contact
+                {t('contact')}
               </Link>
             </Box>
           </Grid>
 
           <Grid item xs={12} md={4}>
             <Typography variant="h6" gutterBottom>
-              Legal
+              {t('legal')}
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-              <Link href="#" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+              <Link href={`/${locale}/privacy`} color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
                 {t('privacy')}
               </Link>
-              <Link href="#" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+              <Link href={`/${locale}/terms`} color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
                 {t('terms')}
               </Link>
             </Box>
@@ -101,6 +102,14 @@ export default function Footer() {
         </Grid>
 
         <Box sx={{ mt: 4, pt: 3, borderTop: '1px solid', borderColor: 'divider' }}>
+          <Typography 
+            variant="body2" 
+            color="text.secondary" 
+            align="center"
+            sx={{ mb: 2, px: { xs: 2, md: 4 } }}
+          >
+            {t('gdprNotice')}
+          </Typography>
           <Typography variant="body2" color="text.secondary" align="center">
             © {currentYear} LuminaAI. {t('rights')}
           </Typography>

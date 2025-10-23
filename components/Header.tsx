@@ -18,18 +18,25 @@ import {
   SelectChangeEvent,
   useTheme,
   useMediaQuery,
+  Breadcrumbs,
+  Link as MuiLink,
+  Typography,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import LanguageIcon from '@mui/icons-material/Language';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import HomeIcon from '@mui/icons-material/Home';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
+import Link from 'next/link';
 import { useThemeMode } from '@/lib/ThemeProvider';
 import Logo from './Logo';
 
 export default function Header() {
   const t = useTranslations('nav');
+  const tBreadcrumbs = useTranslations('breadcrumbs');
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -38,15 +45,45 @@ export default function Header() {
   const { mode, toggleTheme } = useThemeMode();
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  // Generate breadcrumbs based on current path
+  const generateBreadcrumbs = (): Array<{
+    label: string;
+    href: string;
+    icon?: React.ReactNode;
+  }> | null => {
+    const paths = pathname.split('/').filter((x) => x && x !== locale);
+    
+    // Don't show breadcrumbs on home page
+    if (paths.length === 0) return null;
+
+    const breadcrumbItems: Array<{
+      label: string;
+      href: string;
+      icon?: React.ReactNode;
+    }> = [
+      {
+        label: tBreadcrumbs('home'),
+        href: `/${locale}`,
+        icon: <HomeIcon sx={{ fontSize: '1.2rem' }} />,
+      },
+    ];
+
+    paths.forEach((path) => {
+      breadcrumbItems.push({
+        label: tBreadcrumbs(path) || path,
+        href: `/${locale}/${path}`,
+      });
+    });
+
+    return breadcrumbItems;
+  };
+
+  const breadcrumbs = generateBreadcrumbs();
+
   const navItems = [
     { label: t('home'), href: '#home' },
-    { label: t('solution'), href: '#solution' },  
-    { label: t('howItWorks'), href: '#how-it-works' },
-    { label: t('testimonials'), href: '#testimonials' },
+    { label: t('services'), href: '#solution' },
     { label: t('about'), href: '#about' },
-    { label: t('audit'), href: '#audit' },
-    { label: t('offer'), href: '#offer' },
-    // { label: t('blog'), href: '#blog' },
     { label: t('contact'), href: '#contact' },
   ];
 
@@ -87,6 +124,24 @@ export default function Header() {
             </ListItemButton>
           </ListItem>
         ))}
+        {/* CTA Button in Mobile Menu */}
+        <ListItem disablePadding sx={{ px: 2, py: 1 }}>
+          <Button
+            fullWidth
+            variant="contained"
+            onClick={() => handleNavClick('#audit')}
+            sx={{
+              fontWeight: 600,
+              py: 1.5,
+              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+              '&:hover': {
+                background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
+              },
+            }}
+          >
+            {t('auditCTA')} ✨
+          </Button>
+        </ListItem>
       </List>
     </Box>
   );
@@ -107,7 +162,9 @@ export default function Header() {
         <Container maxWidth="lg">
           <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
             {/* Logo */}
-            <Logo />
+            <Link href={`/${locale}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Logo />
+            </Link>
 
             {/* Desktop Navigation */}
             {!isMobile && (
@@ -124,6 +181,25 @@ export default function Header() {
                     {item.label}
                   </Button>
                 ))}
+                {/* CTA Button - Free Audit */}
+                <Button
+                  variant="contained"
+                  onClick={() => handleNavClick('#audit')}
+                  sx={{
+                    ml: 1,
+                    fontWeight: 600,
+                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+                    '&:hover': {
+                      background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
+                      boxShadow: '0 6px 20px rgba(102, 126, 234, 0.6)',
+                      transform: 'translateY(-2px)',
+                    },
+                    transition: 'all 0.3s ease',
+                  }}
+                >
+                  {t('auditCTA')} ✨
+                </Button>
               </Box>
             )}
 
@@ -164,6 +240,67 @@ export default function Header() {
           </Toolbar>
         </Container>
       </AppBar>
+
+      {/* Breadcrumbs */}
+      {breadcrumbs && (
+        <Box
+          sx={{
+            backgroundColor: mode === 'light' ? 'rgba(248, 249, 250, 0.8)' : 'rgba(15, 23, 42, 0.8)',
+            borderBottom: `1px solid ${theme.palette.divider}`,
+            py: 1.5,
+          }}
+        >
+          <Container maxWidth="lg">
+            <Breadcrumbs
+              separator={<NavigateNextIcon fontSize="small" />}
+              aria-label="breadcrumb"
+              sx={{
+                '& .MuiBreadcrumbs-separator': {
+                  color: 'text.secondary',
+                },
+              }}
+            >
+              {breadcrumbs.slice(0, -1).map((item, index) => (
+                <Link
+                  key={index}
+                  href={item.href}
+                  passHref
+                  style={{ textDecoration: 'none' }}
+                >
+                  <MuiLink
+                    sx={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      color: 'text.secondary',
+                      fontSize: { xs: '0.85rem', md: '0.9rem' },
+                      '&:hover': {
+                        color: 'primary.main',
+                        textDecoration: 'underline',
+                      },
+                    }}
+                  >
+                    {item.icon}
+                    {item.label}
+                  </MuiLink>
+                </Link>
+              ))}
+              <Typography
+                sx={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 0.5,
+                  color: 'text.primary',
+                  fontWeight: 600,
+                  fontSize: { xs: '0.85rem', md: '0.9rem' },
+                }}
+              >
+                {breadcrumbs[breadcrumbs.length - 1]?.label}
+              </Typography>
+            </Breadcrumbs>
+          </Container>
+        </Box>
+      )}
 
       {/* Mobile Drawer */}
       <Drawer

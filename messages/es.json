@@ -1,15 +1,21 @@
 {
   "nav": {
     "home": "Inicio",
+    "services": "Servicios",
     "solution": "Soluciones",
     "howItWorks": "Cómo Funciona",
     "testimonials": "Testimonios",
-    "about": "Quiénes Somos",
+    "about": "Nosotros",
     "audit": "Auditoría",
+    "auditCTA": "Auditoría Gratuita",
     "offer": "Oferta",
-    "services": "Servicios",
     "blog": "Blog",
     "contact": "Contacto"
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
   },
   "hero": {
     "title": "Automatiza tu negocio. Optimiza tu futuro.",
@@ -260,6 +266,14 @@
     "person2LinkedIn": "https://www.linkedin.com/in/creativalilo",
     "connectLinkedIn": "Conectar en LinkedIn"
   },
+  "trust": {
+    "title": "Tu Privacidad, Nuestra Prioridad",
+    "subtitle": "Automatización basada en seguridad y transparencia",
+    "mainText": "En Lumina AI, creemos que la automatización debe simplificar la vida, no poner en riesgo tu privacidad. Por eso, todas las herramientas que utilizamos, desde n8n hasta nuestro proveedor de hosting Vercel, siguen estrictos estándares RGPD. Tus datos permanecen seguros, encriptados y manejados únicamente por profesionales autorizados.",
+    "badge1": "Cumplimiento RGPD",
+    "badge2": "Encriptación Total",
+    "badge3": "Infraestructura Segura"
+  },
   "audit": {
     "title": "Qué Obtendrás de Tu Auditoría Gratuita de Automatización con IA",
     "subtitle": "Te mostraremos qué es posible, qué es práctico y qué tendrá el mayor impacto primero — sin jerga técnica, sin venta agresiva. Solo claridad.",
@@ -327,8 +341,23 @@
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
+    "description": "Soluciones de automatización inteligente para negocios modernos.",
     "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio"
+    "terms": "Términos de Servicio",
+    "gdprNotice": "Respetamos tu privacidad. Lumina AI cumple con el RGPD del Reino Unido y procesa todos los datos personales de forma segura y transparente. Lee nuestra Política de Privacidad para más detalles.",
+    "links": "Enlaces",
+    "legal": "Legal",
+    "home": "Inicio",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "content": "El contenido de la política de privacidad se agregará aquí."
+  },
+  "termsOfService": {
+    "title": "Términos de Servicio",
+    "content": "El contenido de los términos de servicio se agregará aquí."
   }
 }
 
