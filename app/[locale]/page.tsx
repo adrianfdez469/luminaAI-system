@@ -33,7 +33,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <AboutSection />
         <TrustSection />
         <AuditSection />
-        <OfferSection />
+        {/* <OfferSection /> */}
         {/* <BlogSection /> */}
         <NewsletterSection />
         <ContactSection />

@@ -234,6 +234,7 @@ export default function ChatbotWidget() {
         color="primary"
         aria-label="chat"
         onClick={handleToggle}
+        data-chatbot-trigger="true"
         sx={{
           position: 'fixed',
           bottom: 24,

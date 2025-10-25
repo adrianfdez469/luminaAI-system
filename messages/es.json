@@ -233,13 +233,14 @@
     "step3Desc": "Construimos y conectamos tus flujos de trabajo, probamos todo y lo entregamos listo para usar.",
     "step4Title": "4. Soporte Continuo",
     "step4Desc": "Mantenimiento y actualizaciones opcionales a medida que tu negocio crece.",
-    "cta": "Agenda Tu Llamada Gratuita"
+    "cta": "Contacta para programar una llamada gratuita"
   },
   "testimonials": {
     "title": "Lo Que Dicen Nuestros Clientes",
     "subtitle": "Resultados reales de negocios como el tuyo",
-    "videoTitle": "Mira Cómo Transformamos Su Negocio",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "videoTitle": "Testimonio de clientes. Gerardo (Cigardepot.us) Blog automation",
+    "videoUrl": "https://www.youtube.com/embed/VRZrUZGO1O0?si=MpJgp6bBVWCpuCO8",
+    
     "testimonial1Name": "Sarah Johnson",
     "testimonial1Role": "Fundadora, Agencia de Marketing Digital",
     "testimonial1Text": "LuminaAI nos ahorró más de 15 horas por semana en incorporación de clientes y seguimiento de correos. Ahora podemos enfocarnos en estrategia en lugar de trabajo administrativo.",
@@ -293,6 +294,13 @@
     "roadmapItem3": "Herramientas e integraciones recomendadas",
     "roadmapItem4": "Una cotización si quieres que lo construyamos para ti",
     "cta": "Obtén Tu Auditoría Gratuita – Ve Qué Podrías Ahorrar Este Mes",
+    "ctaSubtitle": "Elige cómo quieres empezar",
+    "chatbotOption": "Prueba Nuestro Asistente Inteligente",
+    "chatbotDesc": "Prueba nuestro asistente de IA gratis y ve la automatización en acción",
+    "chatbotButton": "Chatear Ahora",
+    "contactOption": "Contáctanos Directamente",
+    "contactDesc": "Habla con nuestro equipo para discutir tus necesidades específicas",
+    "contactButton": "Ponte en Contacto",
     "trustNote": "Esta no es una llamada de ventas — es una llamada de claridad. Te irás sabiendo exactamente cómo la automatización puede funcionar para tu negocio — incluso si decides construirlo tú mismo."
   },
   "offer": {
@@ -314,13 +322,21 @@
   },
   "contact": {
     "title": "Hablemos",
-    "subtitle": "Agenda una reunión o envíanos un mensaje",
+    "subtitle": "Envíanos un mensaje",
+    "chooseMethod": "Elige cómo quieres contactarnos",
+    "whatsappTitle": "Chatea por WhatsApp",
+    "whatsappDesc": "Obtén respuestas instantáneas por WhatsApp",
+    "whatsappButton": "Enviar mensaje por WhatsApp",
+    "formTitle": "Envíanos un Correo",
+    "formDesc": "Completa el formulario y te responderemos pronto",
     "nameLabel": "Nombre",
     "emailLabel": "Email",
     "messageLabel": "Mensaje",
     "dateLabel": "Fecha Preferida (opcional)",
     "submit": "Enviar Mensaje",
+    "sending": "Enviando...",
     "success": "¡Gracias! Te contactaremos pronto.",
+    "error": "Lo sentimos, hubo un error al enviar tu mensaje. Por favor intenta de nuevo.",
     "namePlaceholder": "Juan Pérez",
     "emailPlaceholder": "juan@empresa.com",
     "messagePlaceholder": "Cuéntanos sobre tus necesidades de automatización..."
@@ -349,15 +365,20 @@
     "legal": "Legal",
     "home": "Inicio",
     "services": "Servicios",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "facebookLink": "https://facebook.com",
+    "instagramLink": "https://www.instagram.com/lumina_ai_uk",
+    "linkedinLink": "https://linkedin.com"
   },
   "privacyPolicy": {
     "title": "Política de Privacidad",
-    "content": "El contenido de la política de privacidad se agregará aquí."
+    "lastUpdated": "Última actualización: 24 Oct 2025",
+    "content": "Política de Privacidad de Lumina AI\n\nÚltima actualización: 24 Oct 2025\n\n1. Quiénes Somos\n\nBienvenido a Lumina AI — creamos soluciones de automatización inteligente para ayudar a pequeñas y medianas empresas a ahorrar tiempo y enfocarse en lo que más importa.\n\nEstamos basados en el Reino Unido y actuamos como controlador de datos para la información personal que compartes con nosotros.\n\nDirección: Unit 156962, PO Box 7169, Poole, BH15 9EL\nEmail: luminaai300@gmail.com\n\n2. La Información que Recopilamos\n\nSolo recopilamos lo necesario para proporcionar nuestros servicios y mantenernos en contacto contigo. Esto puede incluir:\n\n• Tu nombre y apellido\n• Dirección de correo electrónico\n• Nombre de la empresa e industria\n• Cualquier detalle que compartas cuando nos contactas o completas un formulario\n\nNunca solicitamos datos sensibles a menos que sea esencial para un proyecto específico — y si lo hacemos, siempre explicaremos por qué y solicitaremos tu consentimiento primero.\n\n3. Cómo Usamos Tu Información\n\nUsamos tus datos para:\n\n• Comunicarnos contigo sobre tu consulta o proyecto\n• Proporcionar y mejorar nuestros servicios de automatización\n• Enviar actualizaciones, recursos u ofertas (solo si has dado tu consentimiento)\n• Analizar el rendimiento de nuestro sitio web (a través de cookies y herramientas de análisis)\n\nNo vendemos ni alquilamos tu información personal — nunca.\n\n4. Base Legal para el Procesamiento\n\nDependiendo de la situación, procesamos tus datos basándonos en:\n\n• Tu consentimiento (para correos de marketing y newsletters)\n• Interés legítimo (para comunicación, análisis y operaciones comerciales)\n• Necesidad contractual (para entregar los servicios que has solicitado)\n\nPuedes retirar tu consentimiento en cualquier momento contactándonos en luminaai300@gmail.com.\n\n5. Cookies y Rastreo\n\nNuestro sitio web usa cookies y herramientas similares (como Meta Pixel) para entender cómo las personas interactúan con nuestro contenido y mejorar tu experiencia.\n\nSiempre verás un banner de cookies o aviso que te permite aceptar o ajustar tus preferencias. También puedes deshabilitar las cookies en la configuración de tu navegador en cualquier momento.\n\n6. Las Herramientas y Plataformas que Usamos\n\nPara entregar soluciones de automatización e IA, trabajamos con herramientas seguras y compatibles con RGPD como:\n\n• n8n (plataforma de automatización de flujos de trabajo)\n• Integraciones de OpenAI (para automatización de lenguaje natural)\n• Vercel (nuestro proveedor de hosting web, con servidores ubicados en la UE y EE.UU.)\n\nEstas plataformas procesan datos en nuestro nombre bajo estrictos acuerdos de protección de datos. Nos aseguramos de que todas las herramientas utilizadas cumplan con el RGPD del Reino Unido y mantengan altos estándares de seguridad.\n\n7. Compartir Información\n\nPodemos compartir tus datos con:\n\n• Nuestro desarrollador de confianza y colaboradores (para configuración técnica y soporte)\n• Proveedores de servicios que nos ayudan a operar nuestro sitio web o entregar automatizaciones\n• Autoridades legales o regulatorias, si lo requiere la ley\n\nSi compartimos datos con socios fuera del Reino Unido (por ejemplo, nuestro desarrollador en Uruguay), nos aseguramos de que el país proporcione un nivel adecuado de protección o que se implementen las salvaguardas apropiadas.\n\n8. Retención de Datos\n\nMantenemos tu información solo el tiempo necesario:\n\n• Para clientes — hasta que tu proyecto o contrato termine\n• Para suscriptores — hasta que te des de baja o retires el consentimiento\n• Para análisis — por un período limitado para entender las tendencias de uso\n\nDespués de eso, tus datos se eliminan de forma segura o se anonimizan.\n\n9. Tus Derechos\n\nBajo el RGPD del Reino Unido, tienes derecho a:\n\n• Acceder a los datos personales que tenemos sobre ti\n• Solicitar correcciones o eliminación\n• Retirar el consentimiento para marketing\n• Oponerte a ciertas actividades de procesamiento\n• Solicitar que transfiramos tus datos (portabilidad de datos)\n\nPara ejercer cualquiera de estos derechos, simplemente envíanos un correo a luminaai300@gmail.com.\n\n10. Seguridad\n\nUsamos encriptación, controles de acceso y almacenamiento seguro para proteger tus datos. Solo los miembros autorizados del equipo o contratistas (como nuestro desarrollador) pueden acceder a información personal, y solo cuando es necesario para la entrega del proyecto.\n\n11. Cambios a Esta Política\n\nPodemos actualizar esta Política de Privacidad de vez en cuando para reflejar cambios en cómo trabajamos o nuevos requisitos legales. La versión más reciente siempre estará disponible en nuestro sitio web.\n\n12. Contáctanos\n\nSi tienes alguna pregunta o inquietud sobre tus datos personales o esta Política de Privacidad, por favor contáctanos en:\n\n📧 luminaai300@gmail.com\n📮 Dirección: Unit 156962, PO Box 7169, Poole, BH15 9EL"
   },
   "termsOfService": {
     "title": "Términos de Servicio",
-    "content": "El contenido de los términos de servicio se agregará aquí."
+    "lastUpdated": "Última actualización: Oct-2025",
+    "content": "Términos de Servicio\n\nÚltima actualización: Oct-2025\n\n¡Bienvenido a Lumina AI 👋!\n\nAl visitar nuestro sitio web o contactarnos sobre nuestros servicios de automatización con IA, aceptas los siguientes Términos de Servicio. Los hemos mantenido simples y humanos para que sepas exactamente qué esperar de nosotros.\n\n1. Quiénes somos\n\nSomos Lumina AI, un negocio con sede en el Reino Unido que ayuda a pequeñas y medianas empresas a simplificar sus procesos a través de la automatización y herramientas de IA.\n\nDirección comercial: Unit 156962, PO Box 7169, Poole, BH15 9EL.\nEmail: luminaai300@gmail.com\n\n2. Qué hacemos\n\nLumina AI proporciona servicios de automatización con IA utilizando herramientas como n8n, y otras integraciones diseñadas para mejorar los flujos de trabajo y la productividad.\n\nActualmente utilizamos nuestro sitio web para información y generación de leads — puedes contactarnos a través de nuestros formularios, pero no procesamos pagos ni vendemos productos digitales directamente en este sitio (¡por ahora!).\n\n3. Uso de nuestro sitio web\n\nEres bienvenido a navegar, aprender y contactarnos.\n\nSin embargo, al usar nuestro sitio, aceptas no:\n\n• Usar nuestro contenido con fines ilegales o engañosos.\n• Intentar acceder o alterar nuestros sistemas de manera no autorizada.\n• Compartir información falsa o dañina a través de nuestros formularios de contacto.\n\nNos reservamos el derecho de actualizar o eliminar partes de nuestro sitio web en cualquier momento.\n\n4. Descargo de responsabilidad de IA\n\nUtilizamos automatización e inteligencia artificial para proporcionar soluciones útiles que ahorran tiempo.\n\nSin embargo, los resultados generados por IA no están garantizados de ser 100% precisos o libres de errores. Siempre es responsabilidad del cliente revisar, verificar y aprobar los resultados antes de usarlos.\n\nLumina AI no es responsable de ninguna pérdida, error o decisión tomada basándose en información generada por IA.\n\n5. Propiedad intelectual\n\nTodo el texto, diseño y visuales en este sitio pertenecen a Lumina AI a menos que se indique lo contrario.\n\nPuedes compartir o referenciar nuestro contenido (¡nos encanta eso!) — pero hazlo con crédito y sin modificaciones.\n\n6. Herramientas y enlaces externos\n\nNuestras automatizaciones y sitio pueden conectarse a herramientas o plataformas de terceros como n8n, Google o Meta.\n\nCada una de estas tiene su propia política de privacidad y términos, y no somos responsables de sus prácticas una vez que dejas nuestro sitio o usas esas herramientas de manera independiente.\n\n7. Formularios de contacto y comunicación\n\nSi te pones en contacto a través de nuestro sitio web, aceptas que podemos responder utilizando los detalles que has proporcionado.\n\nSiempre manejaremos tu información de acuerdo con nuestra Política de Privacidad.\n\n8. Cambios a estos términos\n\nPodemos actualizar estos Términos de Servicio ocasionalmente para reflejar cambios en nuestros servicios, herramientas o regulaciones.\n\nCuando lo hagamos, actualizaremos la fecha de \"Última actualización\" arriba.\n\n9. Ley aplicable\n\nEstos términos se rigen por la ley del Reino Unido, y cualquier disputa se manejará bajo la jurisdicción del Reino Unido.\n\n10. Contáctanos\n\nSi tienes alguna pregunta sobre estos términos, puedes enviarnos un correo en cualquier momento a:\n\n📧 luminaai300@gmail.com"
   }
 }
 

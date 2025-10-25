@@ -40,7 +40,7 @@ export default function Footer() {
               <IconButton
                 aria-label="Facebook"
                 color="primary"
-                href="https://facebook.com"
+                href={t('facebookLink')}
                 target="_blank"
               >
                 <FacebookIcon />
@@ -49,7 +49,7 @@ export default function Footer() {
               <IconButton
                 aria-label="Instagram"
                 color="primary"
-                href="https://www.instagram.com/lumina_ai_uk"
+                href={t('instagramLink')}
                 target="_blank"
               >
                 <InstagramIcon />
@@ -58,7 +58,7 @@ export default function Footer() {
               <IconButton
                 aria-label="LinkedIn"
                 color="primary"
-                href="https://linkedin.com"
+                href={t('linkedinLink')}
                 target="_blank"
               >
                 <LinkedInIcon />

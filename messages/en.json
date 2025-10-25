@@ -233,13 +233,13 @@
     "step3Desc": "We build and connect your workflows, test everything, and hand it over ready to use.",
     "step4Title": "4. Ongoing Support",
     "step4Desc": "Optional maintenance and updates as your business grows.",
-    "cta": "Book a Free Discovery Call"
+    "cta": "Contact us to schedule a free discovery call"
   },
   "testimonials": {
     "title": "What Our Clients Say",
     "subtitle": "Real results from businesses like yours",
     "videoTitle": "See How We Transformed Their Business",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "videoUrl": "https://www.youtube.com/embed/WbA0zOkOv3I?si=ewlRFM0370sv3Q89",
     "testimonial1Name": "Sarah Johnson",
     "testimonial1Role": "Founder, Digital Marketing Agency",
     "testimonial1Text": "LuminaAI saved us 15+ hours per week on client onboarding and email follow-ups. Now we can focus on strategy instead of admin work.",
@@ -293,6 +293,13 @@
     "roadmapItem3": "Recommended tools and integrations",
     "roadmapItem4": "A quote if you'd like us to build it for you",
     "cta": "Get Your Free Automation Audit – See What You Could Save This Month",
+    "ctaSubtitle": "Choose how you'd like to get started",
+    "chatbotOption": "Try Our Smart Assistant",
+    "chatbotDesc": "Test our AI assistant for free and see automation in action",
+    "chatbotButton": "Chat Now",
+    "contactOption": "Contact Us Directly",
+    "contactDesc": "Speak with our team to discuss your specific needs",
+    "contactButton": "Get in Touch",
     "trustNote": "This isn't a sales call — it's a clarity call. You'll leave knowing exactly how automation can work for your business — even if you decide to build it yourself."
   },
   "offer": {
@@ -314,13 +321,21 @@
   },
   "contact": {
     "title": "Let's Talk",
-    "subtitle": "Schedule a meeting or send us a message",
+    "subtitle": "Send us a message",
+    "chooseMethod": "Choose how you'd like to contact us",
+    "whatsappTitle": "Chat on WhatsApp",
+    "whatsappDesc": "Get instant replies on WhatsApp",
+    "whatsappButton": "Message on WhatsApp",
+    "formTitle": "Send us an Email",
+    "formDesc": "Fill out the form and we'll get back to you",
     "nameLabel": "Name",
     "emailLabel": "Email",
     "messageLabel": "Message",
     "dateLabel": "Preferred Date (optional)",
     "submit": "Send Message",
+    "sending": "Sending...",
     "success": "Thank you! We'll get back to you soon.",
+    "error": "Sorry, there was an error sending your message. Please try again.",
     "namePlaceholder": "John Doe",
     "emailPlaceholder": "john@company.com",
     "messagePlaceholder": "Tell us about your automation needs..."
@@ -349,15 +364,20 @@
     "legal": "Legal",
     "home": "Home",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "facebookLink": "https://facebook.com",
+    "instagramLink": "https://www.instagram.com/lumina_ai_uk",
+    "linkedinLink": "https://linkedin.com"
   },
   "privacyPolicy": {
     "title": "Privacy Policy",
-    "content": "Privacy policy content will be added here."
+    "lastUpdated": "Last updated: 24 Oct 2025",
+    "content": "Lumina AI Privacy Policy\n\nLast updated: 24 Oct 2025\n\n1. Who We Are\n\nWelcome to Lumina AI — we create smart automation solutions to help small and medium-sized businesses save time and focus on what matters most.\n\nWe are based in the United Kingdom and act as the data controller for the personal information you share with us.\n\nAddress: Unit 156962, PO Box 7169, Poole, BH15 9EL\nEmail: luminaai300@gmail.com\n\n2. The Information We Collect\n\nWe only collect what's necessary to provide our services and keep in touch with you. This may include:\n\n• Your name and surname\n• Email address\n• Business name and industry\n• Any details you share when you contact us or fill in a form\n\nWe never ask for sensitive data unless it's essential for a specific project — and if we do, we'll always explain why and ask for your consent first.\n\n3. How We Use Your Information\n\nWe use your data to:\n\n• Communicate with you about your enquiry or project\n• Provide and improve our automation services\n• Send updates, resources, or offers (only if you've given consent)\n• Analyse how our website performs (through cookies and analytics tools)\n\nWe do not sell or rent your personal information — ever.\n\n4. Legal Basis for Processing\n\nDepending on the situation, we process your data based on:\n\n• Your consent (for marketing emails and newsletters)\n• Legitimate interest (for communication, analytics, and business operations)\n• Contractual necessity (to deliver services you've requested)\n\nYou can withdraw your consent at any time by contacting us at luminaai300@gmail.com.\n\n5. Cookies and Tracking\n\nOur website uses cookies and similar tools (like Meta Pixel) to understand how people interact with our content and improve your experience.\n\nYou'll always see a cookie banner or notice that allows you to accept or adjust your preferences. You can also disable cookies in your browser settings at any time.\n\n6. The Tools and Platforms We Use\n\nTo deliver automation and AI solutions, we work with secure and GDPR-compliant tools such as:\n\n• n8n (workflow automation platform)\n• OpenAI integrations (for natural language automation)\n• Vercel (our website hosting provider, with servers located in the EU and US)\n\nThese platforms process data on our behalf under strict data protection agreements. We ensure that all tools used comply with the UK GDPR and maintain high security standards.\n\n7. Sharing Information\n\nWe may share your data with:\n\n• Our trusted developer and collaborators (for technical setup and support)\n• Service providers who help us operate our website or deliver automations\n• Legal or regulatory authorities, if required by law\n\nIf we share data with partners outside the UK (for example, our developer in Uruguay), we ensure that the country provides an adequate level of protection or that appropriate safeguards are in place.\n\n8. Data Retention\n\nWe keep your information only for as long as needed:\n\n• For clients — until your project or contract ends\n• For subscribers — until you unsubscribe or withdraw consent\n• For analytics — for a limited period to understand usage trends\n\nAfter that, your data is securely deleted or anonymised.\n\n9. Your Rights\n\nUnder the UK GDPR, you have the right to:\n\n• Access the personal data we hold about you\n• Request corrections or deletion\n• Withdraw consent for marketing\n• Object to certain processing activities\n• Ask us to transfer your data (data portability)\n\nTo exercise any of these rights, simply email us at luminaai300@gmail.com.\n\n10. Security\n\nWe use encryption, access controls, and secure storage to protect your data. Only authorised team members or contractors (like our developer) can access personal information, and only when it's necessary for project delivery.\n\n11. Changes to This Policy\n\nWe may update this Privacy Policy from time to time to reflect changes in how we work or new legal requirements. The latest version will always be available on our website.\n\n12. Contact Us\n\nIf you have any questions or concerns about your personal data or this Privacy Policy, please contact us at:\n\n📧 luminaai300@gmail.com\n📮 Address: Unit 156962, PO Box 7169, Poole, BH15 9EL"
   },
   "termsOfService": {
     "title": "Terms of Service",
-    "content": "Terms of service content will be added here."
+    "lastUpdated": "Last updated: Oct-2025",
+    "content": "Terms of Service\n\nLast updated: Oct-2025\n\nWelcome to Lumina AI 👋\n\nBy visiting our website or contacting us about our AI automation services, you agree to the following Terms of Service. We've kept them simple and human so you know exactly what to expect from us.\n\n1. Who we are\n\nWe're Lumina AI, a UK-based business helping small and medium companies simplify their processes through automation and AI tools.\n\nBusiness address: Unit 156962, PO Box 7169, Poole, BH15 9EL.\nEmail: luminaai300@gmail.com\n\n2. What we do\n\nLumina AI provides AI automation services using tools such as n8n, and other integrations designed to improve workflows and productivity.\n\nWe currently use our website for information and lead generation — you can contact us through our forms, but we do not process payments or sell digital products directly on this site (for now!).\n\n3. Using our website\n\nYou're welcome to browse, learn, and contact us.\n\nHowever, by using our site, you agree not to:\n\n• Use our content for illegal or misleading purposes.\n• Try to access or alter our systems in unauthorized ways.\n• Share false or harmful information through our contact forms.\n\nWe reserve the right to update or remove parts of our website at any time.\n\n4. AI disclaimer\n\nWe use automation and artificial intelligence to provide helpful, time-saving solutions.\n\nHowever, AI-generated results are not guaranteed to be 100% accurate or free from errors. It's always the client's responsibility to review, verify, and approve the outputs before use.\n\nLumina AI is not liable for any loss, error, or decision made based on AI-generated information.\n\n5. Intellectual property\n\nAll text, design, and visuals on this site belong to Lumina AI unless otherwise stated.\n\nYou may share or reference our content (we love that!) — but please do so with credit and without modification.\n\n6. External tools and links\n\nOur automations and site may connect to third-party tools or platforms such as n8n, Google, or Meta.\n\nEach of these has its own privacy policy and terms, and we are not responsible for their practices once you leave our site or use those tools independently.\n\n7. Contact forms and communication\n\nIf you get in touch through our website, you agree that we can respond using the details you've provided.\n\nWe'll always handle your information in line with our Privacy Policy.\n\n8. Changes to these terms\n\nWe may update these Terms of Service occasionally to reflect changes in our services, tools, or regulations.\n\nWhen we do, we'll update the \"Last updated\" date above.\n\n9. Governing law\n\nThese terms are governed by UK law, and any disputes will be handled under UK jurisdiction.\n\n10. Contact us\n\nIf you have any questions about these terms, you can email us anytime at:\n\n📧 luminaai300@gmail.com"
   }
 }
 

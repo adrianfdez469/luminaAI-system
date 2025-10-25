@@ -132,7 +132,7 @@ export default function TestimonialsSection() {
             >
               <iframe
                 src={t('videoUrl')}
-                title="Client Testimonial Video"
+                title={t('videoTitle')}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 style={{
@@ -144,12 +144,13 @@ export default function TestimonialsSection() {
                   border: 'none',
                 }}
               />
+              
             </Box>
           </Paper>
         </motion.div>
 
         {/* Testimonials Grid */}
-        <Grid container spacing={{ xs: 3, md: 4 }} alignItems="stretch">
+        {/* <Grid container spacing={{ xs: 3, md: 4 }} alignItems="stretch">
           {testimonials.map((testimonial, index) => (
             <Grid item xs={12} md={4} key={index} sx={{ display: 'flex' }}>
               <motion.div
@@ -178,7 +179,7 @@ export default function TestimonialsSection() {
                     },
                   }}
                 >
-                  {/* Quote Icon */}
+                  
                   <Box
                     sx={{
                       position: 'absolute',
@@ -190,7 +191,7 @@ export default function TestimonialsSection() {
                     <FormatQuoteIcon sx={{ fontSize: 60 }} />
                   </Box>
 
-                  {/* Rating Stars */}
+                  
                   <Box sx={{ display: 'flex', gap: 0.5, mb: 2 }}>
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <StarIcon
@@ -203,7 +204,7 @@ export default function TestimonialsSection() {
                     ))}
                   </Box>
 
-                  {/* Testimonial Text */}
+                  
                   <Typography
                     variant="body1"
                     sx={{
@@ -218,7 +219,7 @@ export default function TestimonialsSection() {
                     "{testimonial.text}"
                   </Typography>
 
-                  {/* Author Info */}
+                  
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mt: 'auto' }}>
                     <Avatar
                       sx={{
@@ -257,7 +258,7 @@ export default function TestimonialsSection() {
               </motion.div>
             </Grid>
           ))}
-        </Grid>
+        </Grid> */}
       </Container>
     </Box>
   );

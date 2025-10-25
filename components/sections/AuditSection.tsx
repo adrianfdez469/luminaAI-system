@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Box, Container, Typography, Button, Grid, Paper, Divider } from '@mui/material';
+import { Box, Container, Typography, Button, Grid, Paper, Divider, Card, CardContent } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import SearchIcon from '@mui/icons-material/Search';
@@ -12,6 +12,8 @@ import MapIcon from '@mui/icons-material/Map';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 export default function AuditSection() {
   const t = useTranslations('audit');
@@ -51,7 +53,15 @@ export default function AuditSection() {
     t('roadmapItem4'),
   ];
 
-  const handleCTAClick = () => {
+  const handleChatbotClick = () => {
+    // Trigger chatbot widget by clicking the FAB button
+    const chatbotButton = document.querySelector('[data-chatbot-trigger="true"]') as HTMLElement;
+    if (chatbotButton) {
+      chatbotButton.click();
+    }
+  };
+
+  const handleContactClick = () => {
     const contactSection = document.querySelector('#contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -260,34 +270,205 @@ export default function AuditSection() {
           </Paper>
         </motion.div>
 
-        {/* CTA Button */}
-        <Box sx={{ textAlign: 'center', mb: { xs: 3, md: 4 }, px: { xs: 2, sm: 0 } }}>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+        {/* CTA Options */}
+        <Box sx={{ mb: { xs: 3, md: 4 }, px: { xs: 2, sm: 0 } }}>
+          <Typography 
+            variant="h5" 
+            sx={{ 
+              textAlign: 'center', 
+              mb: 4, 
+              fontWeight: 600,
+              fontSize: { xs: '1.25rem', md: '1.5rem' }
+            }}
           >
-            <Button
-              variant="contained"
-              size="large"
-              onClick={handleCTAClick}
-              startIcon={<CalendarMonthIcon />}
-              sx={{
-                py: { xs: 1.5, md: 2.5 },
-                px: { xs: 3, md: 5 },
-                fontSize: { xs: '0.95rem', sm: '1rem', md: '1.1rem' },
-                fontWeight: 700,
-                boxShadow: 4,
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                '&:hover': {
-                  boxShadow: 6,
-                  background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
-                },
-              }}
-            >
-              {t('cta')}
-            </Button>
-          </motion.div>
+            {t('ctaSubtitle')}
+          </Typography>
+
+          <Grid container spacing={4} justifyContent="center">
+            {/* Chatbot Option */}
+            <Grid item xs={12} md={6}>
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                style={{ height: '100%' }}
+              >
+                <Card
+                  sx={{
+                    height: '100%',
+                    minHeight: { xs: 'auto', md: 300 },
+                    display: 'flex',
+                    flexDirection: 'column',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer',
+                    border: '2px solid',
+                    borderColor: 'divider',
+                    '&:hover': {
+                      transform: 'translateY(-8px)',
+                      boxShadow: 6,
+                      borderColor: '#667eea',
+                    },
+                  }}
+                  onClick={handleChatbotClick}
+                >
+                  <CardContent
+                    sx={{
+                      p: { xs: 3, md: 4 },
+                      textAlign: 'center',
+                      flexGrow: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        width: 80,
+                        height: 80,
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                        mb: 3,
+                      }}
+                    >
+                      <SmartToyIcon sx={{ fontSize: 48, color: 'white' }} />
+                    </Box>
+                    
+                    <Typography
+                      variant="h5"
+                      sx={{
+                        fontWeight: 600,
+                        mb: 1.5,
+                        color: 'text.primary',
+                      }}
+                    >
+                      {t('chatbotOption')}
+                    </Typography>
+                    
+                    <Typography
+                      variant="body1"
+                      color="text.secondary"
+                      sx={{ mb: 3 }}
+                    >
+                      {t('chatbotDesc')}
+                    </Typography>
+
+                    <Button
+                      variant="contained"
+                      size="large"
+                      startIcon={<SmartToyIcon />}
+                      sx={{
+                        py: 1.5,
+                        px: 4,
+                        fontSize: '1rem',
+                        fontWeight: 600,
+                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                        '&:hover': {
+                          background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
+                        },
+                      }}
+                    >
+                      {t('chatbotButton')}
+                    </Button>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </Grid>
+
+            {/* Contact Option */}
+            <Grid item xs={12} md={6}>
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                style={{ height: '100%' }}
+              >
+                <Card
+                  sx={{
+                    height: '100%',
+                    minHeight: { xs: 'auto', md: 300 },
+                    display: 'flex',
+                    flexDirection: 'column',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer',
+                    border: '2px solid',
+                    borderColor: 'divider',
+                    '&:hover': {
+                      transform: 'translateY(-8px)',
+                      boxShadow: 6,
+                      borderColor: 'primary.main',
+                    },
+                  }}
+                  onClick={handleContactClick}
+                >
+                  <CardContent
+                    sx={{
+                      p: { xs: 3, md: 4 },
+                      textAlign: 'center',
+                      flexGrow: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        width: 80,
+                        height: 80,
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        bgcolor: 'primary.main',
+                        mb: 3,
+                      }}
+                    >
+                      <ContactMailIcon sx={{ fontSize: 48, color: 'white' }} />
+                    </Box>
+                    
+                    <Typography
+                      variant="h5"
+                      sx={{
+                        fontWeight: 600,
+                        mb: 1.5,
+                        color: 'text.primary',
+                      }}
+                    >
+                      {t('contactOption')}
+                    </Typography>
+                    
+                    <Typography
+                      variant="body1"
+                      color="text.secondary"
+                      sx={{ mb: 3 }}
+                    >
+                      {t('contactDesc')}
+                    </Typography>
+
+                    <Button
+                      variant="contained"
+                      size="large"
+                      startIcon={<ContactMailIcon />}
+                      sx={{
+                        py: 1.5,
+                        px: 4,
+                        fontSize: '1rem',
+                        fontWeight: 600,
+                      }}
+                    >
+                      {t('contactButton')}
+                    </Button>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </Grid>
+          </Grid>
         </Box>
 
         {/* Trust Note */}
