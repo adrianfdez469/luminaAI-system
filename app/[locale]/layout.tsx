@@ -33,6 +33,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  interactiveWidget: 'resizes-content', // Allow content to resize when keyboard appears on mobile
 };
 
 export default async function LocaleLayout({

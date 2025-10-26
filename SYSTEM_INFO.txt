@@ -1,0 +1,871 @@
+# LuminaAI System Information
+## Complete Landing Page Content & Business Information
+
+**Generated:** 2025
+**Source:** System messages/en.json
+**Purpose:** Comprehensive knowledge base for AI/LLM training and reference
+
+---
+
+## 🏢 Business Overview
+
+**Company Name:** Lumina AI  
+**Location:** United Kingdom  
+**Business Address:** Unit 156962, PO Box 7169, Poole, BH15 9EL  
+**Contact Email:** luminaai300@gmail.com  
+**Industry:** AI Automation & Business Process Optimization  
+
+**Mission:** Helping small and medium-sized businesses automate key processes with artificial intelligence, reducing operational costs and improving efficiency.
+
+**Social Media:**
+- Facebook: https://www.facebook.com/profile.php?id=61582584809466
+- Instagram: https://www.instagram.com/lumina_ai_uk
+- LinkedIn: https://www.linkedin.com/company/luminaai-solutions/?viewAsMember=false
+
+---
+
+## 🎯 Value Proposition
+
+### Main Tagline
+"Automate your business. Optimize your future."
+
+### Core Message
+At LuminaAI, we help businesses automate key processes with artificial intelligence, reducing operational costs and improving efficiency. We know what it's like to juggle emails, bookings, and daily admin. We automate those repetitive tasks so you don't have to think twice. Your time matters — use it to grow… or simply to breathe.
+
+### Call to Action
+"Book Your Free Automation Audit"
+
+---
+
+## 📊 Problem Statement
+
+### Are You Losing Hours on Repetitive Tasks?
+
+**Common Business Pain Points:**
+1. Manually processing invoices and documents
+2. Copying data between systems
+3. Sending routine emails and follow-ups
+4. Managing spreadsheets and reports
+5. Delays in responding to customer inquiries
+6. Difficulty organizing and following up on client appointments
+
+**Key Statistic:** Average business wastes 20+ hours per week on repetitive tasks
+
+---
+
+## 🛠️ Services & Solutions
+
+### What We Automate
+We create smart workflows that take care of your routine tasks, save you time, and keep your business running smoothly.
+
+---
+
+### 1. Email Automations
+**Description:** Automatically reply to enquiries, follow up leads, and organise your inbox.
+
+**Use Cases:**
+- Auto-respond to common enquiries
+- Lead follow-up sequences
+- Email categorisation & labelling
+- Meeting confirmations
+- Customer onboarding emails
+- Newsletter automation
+- Drip campaigns
+
+**Problems It Solves:**
+- Spending hours daily on repetitive emails
+- Delayed responses to leads
+- Missed follow-ups
+- Inconsistent communication
+- Inbox overwhelm
+
+**Ideal For:** Service businesses, Consultants, Agencies, E-commerce stores, Real estate agents, Healthcare providers
+
+**Savings:** 5-15 hours/week saved | £500-2,000/month in productivity gains | 80% faster response times
+
+---
+
+### 2. Booking & Appointment Systems
+**Description:** Let clients book, reschedule, or cancel appointments — no manual confirmations needed.
+
+**Use Cases:**
+- Online appointment booking
+- Calendar synchronisation
+- Automated reminders (email/SMS)
+- No-show reduction
+- Buffer time management
+- Multi-staff scheduling
+- Payment collection
+
+**Problems It Solves:**
+- Back-and-forth booking emails
+- Double bookings
+- Missed appointments
+- Manual calendar management
+- Time zone confusion
+
+**Ideal For:** Healthcare professionals, Consultants, Salons & spas, Coaches, Lawyers, Real estate agents, Personal trainers
+
+**Savings:** 10-20 hours/week saved | 40% reduction in no-shows | £1,000-3,000/month in recovered time
+
+---
+
+### 3. AI Chatbots (Web, WhatsApp, Telegram)
+**Description:** Smart assistants that answer FAQs 24/7, collect leads, and guide visitors.
+
+**Use Cases:**
+- 24/7 customer support
+- Lead qualification
+- Product recommendations
+- Order status checks
+- FAQ automation
+- Appointment booking
+- Multi-language support
+
+**Problems It Solves:**
+- Can't respond outside business hours
+- Repetitive customer questions
+- Lost leads after hours
+- High support costs
+- Language barriers
+
+**Ideal For:** E-commerce, SaaS companies, Service businesses, Global businesses, High-volume enquiries, Growing startups
+
+**Savings:** 20-40 hours/week saved | 60% reduction in support costs | 3x more leads captured | £2,000-5,000/month savings
+
+---
+
+### 4. Landing Page Creation & Deployment
+**Description:** Professional landing pages built and launched quickly with conversion optimization.
+
+**Use Cases:**
+- Product launches
+- Lead generation
+- Event registrations
+- Course sales
+- Service bookings
+- Special promotions
+- Webinar signups
+
+**Problems It Solves:**
+- No web development skills
+- Slow agency turnaround
+- Expensive web designers
+- Need to test quickly
+- Can't update pages independently
+
+**Ideal For:** Startups, Digital marketers, Course creators, Event organisers, Small businesses, Consultants
+
+**Savings:** 2-4 weeks faster to market | £2,000-8,000 vs traditional agencies | 30% higher conversion rates
+
+---
+
+### 5. AI Content Generation for Blogs
+**Description:** Automatically generate, schedule, and publish SEO-optimized blog content.
+
+**Use Cases:**
+- Weekly blog posts
+- SEO content
+- Social media posts
+- Newsletter content
+- Product descriptions
+- Email campaigns
+- Landing page copy
+
+**Problems It Solves:**
+- No time to write
+- Inconsistent publishing
+- SEO knowledge gaps
+- Writer's block
+- Expensive copywriters
+- Content calendar management
+
+**Ideal For:** B2B companies, SaaS, E-commerce, Marketing agencies, Coaches, Consultants, Growing brands
+
+**Savings:** 15-25 hours/week saved | £1,500-4,000/month vs hiring writers | 4x more content output
+
+---
+
+### 6. CRM & Workflow Integration
+**Description:** Connect your tools (Google, Notion, ClickUp, Airtable, etc.) so everything runs in sync.
+
+**Use Cases:**
+- Lead capture to CRM
+- Contact synchronisation
+- Task creation from emails
+- Sales pipeline automation
+- Reporting dashboards
+- Data backup
+- Cross-platform updates
+
+**Problems It Solves:**
+- Copying data between systems
+- Data inconsistencies
+- Manual updates
+- Missed information
+- Disconnected tools
+- Time wasted switching platforms
+
+**Ideal For:** Sales teams, Project managers, Agencies, Remote teams, Data-driven businesses, Growing companies
+
+**Savings:** 8-15 hours/week saved | 95% reduction in data errors | £800-2,500/month in productivity
+
+---
+
+### 7. WhatsApp Business Automation
+**Description:** Automate customer interactions, bookings, and notifications via WhatsApp.
+
+**Use Cases:**
+- Order confirmations
+- Delivery notifications
+- Appointment reminders
+- Customer support
+- Broadcast campaigns
+- Payment links
+- Product catalogues
+
+**Problems It Solves:**
+- Manual WhatsApp responses
+- Can't scale customer communications
+- Missing messages
+- No business hours automation
+- Poor customer experience
+
+**Ideal For:** Local businesses, E-commerce, Restaurants, Delivery services, Healthcare, Beauty salons, Retail stores
+
+**Savings:** 12-20 hours/week saved | 50% faster response times | £1,000-3,000/month productivity gains
+
+---
+
+### 8. Telegram Bot Development
+**Description:** Custom Telegram bots for communities, notifications, and customer service.
+
+**Use Cases:**
+- Community management
+- Notification systems
+- Customer support
+- Content delivery
+- Polls & surveys
+- Payment collection
+- Channel automation
+
+**Problems It Solves:**
+- Can't manage large communities
+- Manual notifications
+- No structured customer service
+- Limited engagement
+- Time-consuming group moderation
+
+**Ideal For:** Content creators, Online communities, Crypto projects, Course creators, News platforms, SaaS companies
+
+**Savings:** 10-18 hours/week saved | 70% better engagement | £800-2,000/month in moderation costs
+
+---
+
+### 9. Smart Appointment Scheduler
+**Description:** AI-powered scheduling via WhatsApp, Telegram, or web with instant confirmations.
+
+**Use Cases:**
+- Natural language booking
+- Multi-platform scheduling
+- Smart reminders
+- Rescheduling automation
+- Waitlist management
+- Group bookings
+- Resource allocation
+
+**Problems It Solves:**
+- Complex booking processes
+- Platform switching
+- Scheduling conflicts
+- Missed appointments
+- Manual availability management
+- Time zone issues
+
+**Ideal For:** Multi-location businesses, Healthcare, Professional services, Coaches, Therapists, International businesses
+
+**Savings:** 15-25 hours/week saved | 50% fewer no-shows | £1,200-3,500/month productivity gains
+
+---
+
+### 10. Social Media Automation
+**Description:** Schedule, post, and engage across all platforms automatically.
+
+**Use Cases:**
+- Multi-platform posting
+- Content scheduling
+- Auto-responses
+- Hashtag research
+- Story automation
+- Engagement tracking
+- Content repurposing
+
+**Problems It Solves:**
+- Time-consuming manual posting
+- Inconsistent presence
+- Missing engagement opportunities
+- No time for strategy
+- Platform overload
+
+**Ideal For:** Brands, Agencies, Influencers, E-commerce, B2B companies, Personal brands, Growing businesses
+
+**Savings:** 10-20 hours/week saved | 3x more consistent posting | £1,000-3,000/month vs social media managers
+
+---
+
+### 11. Invoice & Payment Automation
+**Description:** Generate, send, and track invoices automatically with payment reminders.
+
+**Use Cases:**
+- Automatic invoicing
+- Payment reminders
+- Recurring billing
+- Late payment follow-ups
+- Expense tracking
+- Receipt generation
+- Financial reporting
+
+**Problems It Solves:**
+- Delayed invoicing
+- Chasing payments
+- Manual data entry
+- Accounting errors
+- Cash flow issues
+- Lost invoice records
+
+**Ideal For:** Freelancers, Agencies, Professional services, Subscription businesses, B2B companies, Contractors
+
+**Savings:** 6-12 hours/week saved | 40% faster payments | £600-1,800/month in improved cash flow
+
+---
+
+### 12. Lead Generation & Nurturing
+**Description:** Capture, qualify, and nurture leads automatically through the sales funnel.
+
+**Use Cases:**
+- Lead capture forms
+- Lead scoring
+- Drip campaigns
+- Segmentation
+- Follow-up sequences
+- Lead qualification
+- Sales handoff
+
+**Problems It Solves:**
+- Leads going cold
+- Manual follow-up
+- Inconsistent nurturing
+- No lead prioritisation
+- Sales team overwhelm
+- Poor conversion rates
+
+**Ideal For:** B2B sales, SaaS, Real estate, Financial services, High-ticket services, Agencies
+
+**Savings:** 12-20 hours/week saved | 2-3x higher conversion rates | £1,500-4,000/month in additional revenue
+
+---
+
+### 13. Customer Support Automation
+**Description:** AI-powered support system with ticket routing and knowledge base integration.
+
+**Use Cases:**
+- Ticket automation
+- AI responses
+- Priority routing
+- Knowledge base
+- Multi-channel support
+- SLA management
+- Escalation workflows
+
+**Problems It Solves:**
+- Overwhelming support volume
+- Slow response times
+- Repetitive questions
+- High support costs
+- Agent burnout
+- Poor customer satisfaction
+
+**Ideal For:** SaaS companies, E-commerce, Subscription services, Tech companies, Growing startups, Global businesses
+
+**Savings:** 20-35 hours/week saved | 65% reduction in support costs | £2,500-6,000/month savings
+
+---
+
+### 14. Data Entry & Processing
+**Description:** Automatically extract, process, and organise data from documents and forms.
+
+**Use Cases:**
+- Invoice processing
+- Form data extraction
+- Document scanning
+- Receipt digitisation
+- Contact extraction
+- Data validation
+- Database population
+
+**Problems It Solves:**
+- Hours spent on data entry
+- Human errors
+- Slow processing
+- Document backlogs
+- Compliance risks
+- Expensive manual labor
+
+**Ideal For:** Accounting firms, Legal practices, Healthcare, Logistics, HR departments, Insurance companies
+
+**Savings:** 15-30 hours/week saved | 98% accuracy improvement | £1,200-4,000/month labor costs saved
+
+---
+
+### 15. Automated Report Generation
+**Description:** Generate and distribute reports, dashboards, and analytics automatically.
+
+**Use Cases:**
+- Sales reports
+- Financial dashboards
+- Performance analytics
+- Client reports
+- KPI tracking
+- Executive summaries
+- Compliance reporting
+
+**Problems It Solves:**
+- Manual report compilation
+- Data gathering from multiple sources
+- Time-consuming formatting
+- Delayed insights
+- Report distribution overhead
+
+**Ideal For:** Agencies, Management teams, Departments, Franchises, Multi-location businesses, Data-driven companies
+
+**Savings:** 8-16 hours/week saved | Real-time insights | £800-2,500/month productivity gains
+
+---
+
+### 16-25. Additional Services
+*(Similar detailed breakdowns available for: Email Marketing Automation, E-commerce Automation, Inventory Management, Document Generation, Meeting Scheduler, Survey & Feedback, SMS Notifications, Slack/Teams Integration, Voice Assistants, AI Analytics)*
+
+---
+
+## 🔄 How It Works
+
+### 4 Simple Steps to Transform Your Business
+
+**Step 1: Discovery Call**  
+We understand your business, systems, and bottlenecks.
+
+**Step 2: Automation Blueprint**  
+You receive a clear plan of what to automate first for maximum time savings.
+
+**Step 3: Implementation**  
+We build and connect your workflows, test everything, and hand it over ready to use.
+
+**Step 4: Ongoing Support**  
+Optional maintenance and updates as your business grows.
+
+---
+
+## 🎁 Free AI Automation Audit
+
+### What You'll Get
+
+**1. Identify What Can Be Automated**  
+We'll analyse your current daily and weekly tasks — emails, bookings, content, admin — and pinpoint what can run automatically using the tools you already use.
+
+Example: "When a new lead fills out your website form, automatically send a confirmation email, add them to your CRM, and schedule a follow-up."
+
+**2. Prioritise What to Automate First**  
+Not everything has to be done at once. We'll help you spot the quick wins that save you the most time and give you the fastest return on investment. Usually this means automating lead responses, bookings, or client follow-ups first.
+
+**3. What to Leave for Later**  
+Some automations make sense once your business grows or you add more tools. We'll show you which ones to plan for later — so your automation system grows with your business, not ahead of it.
+
+**4. What Can't (or Shouldn't) Be Automated**  
+We'll be honest about what's best left human — like personal messages, strategy decisions, or sensitive communications. Automation should enhance your business, not replace your personal touch.
+
+### Your Custom Automation Roadmap
+
+You'll walk away with a simple, visual roadmap showing:
+- The top 3 automations to start with
+- Estimated time saved per week
+- Recommended tools and integrations
+- A quote if you'd like us to build it for you
+
+**Note:** This isn't a sales call — it's a clarity call. You'll leave knowing exactly how automation can work for your business — even if you decide to build it yourself.
+
+---
+
+## 💰 Pricing
+
+**Market Comparison:** AI agencies charge between £3,000 and £10,000 for automation setups like these.
+
+**Our Offer:** We're offering a starter package from just £500, depending on the size and complexity of your automation — a great opportunity to start small, see real results, and grow from there.
+
+**ROI:** This investment pays for itself in time and productivity within weeks.
+
+### What's Included:
+- Custom automations tailored to your business
+- Full setup and testing
+- Easy-to-use systems you can manage without technical skills
+- Optional ongoing support and maintenance
+
+---
+
+## 💬 Testimonials
+
+### Sarah Johnson
+**Founder, Digital Marketing Agency**  
+"LuminaAI saved us 15+ hours per week on client onboarding and email follow-ups. Now we can focus on strategy instead of admin work."
+
+### Michael Chen
+**CEO, E-commerce Business**  
+"The booking automation system they built has completely transformed how we handle customer appointments. No more back-and-forth emails!"
+
+### Emma Williams
+**Consultant**  
+"I was skeptical at first, but the automation audit showed me exactly where I was wasting time. The ROI was immediate and impressive."
+
+---
+
+## 👥 Team
+
+### Adrián Fernández
+**Founder & Lead Developer**  
+Software engineer with over 10 years of experience building applications. With the rise of AI, specialized in creating automation workflows that integrate seamlessly with artificial intelligence to transform how businesses operate.  
+**Fun fact:** Gym addict 💪  
+**LinkedIn:** https://www.linkedin.com/in/adrian-fernandez
+
+### Liset Hernandez
+**Co-Founder & Business Director**  
+Entrepreneur based in the UK, passionate about using AI to make business simple and human again. After years of working across different industries, discovered how automation can transform not just workflows, but people's lives — freeing time for creativity, growth, and purpose.  
+**Fun fact:** Proud mom 👶  
+**LinkedIn:** https://www.linkedin.com/in/lisset-hernandez
+
+### Company Philosophy
+"The future of business is automation powered by AI — every company will operate this way. But early adopters are the ones who will mark the difference, gaining a competitive edge today while others catch up tomorrow."
+
+---
+
+## 🔒 Trust & Security
+
+### Your Privacy, Our Priority
+
+At Lumina AI, we believe automation should make life simpler — not risk your privacy. That's why every tool we use, from n8n to our hosting provider Vercel, follows strict GDPR standards. Your data stays safe, encrypted, and handled only by authorised professionals.
+
+**Security Badges:**
+- GDPR Compliant
+- End-to-End Encryption
+- Secure Infrastructure
+
+---
+
+## 📧 Contact Information
+
+**Primary Email:** luminaai300@gmail.com  
+**Business Address:** Unit 156962, PO Box 7169, Poole, BH15 9EL  
+**WhatsApp:** +44 07949282054
+
+### Contact Options:
+1. **WhatsApp** - Get instant replies on WhatsApp
+2. **Email Form** - Fill out the form and we'll get back to you
+3. **Smart Chatbot** - Try our AI assistant for free and see automation in action
+
+---
+
+## 📜 Legal Information
+
+### Privacy Policy Summary
+**Last Updated:** 24 Oct 2025
+
+**Key Points:**
+- We only collect necessary information (name, email, business details)
+- Data used only for communication and service delivery
+- Never sell or rent personal information
+- GDPR compliant with UK data protection standards
+- Data encrypted and securely stored
+- Users can request data access, correction, or deletion anytime
+
+**Tools We Use:**
+- n8n (workflow automation platform)
+- OpenAI integrations (for natural language automation)
+- Vercel (website hosting - EU and US servers)
+
+### Terms of Service Summary
+**Last Updated:** Oct-2025
+
+**Key Points:**
+- UK-based business helping SMEs with AI automation
+- Website used for information and lead generation
+- No direct payment processing on website (yet)
+- AI-generated results not guaranteed 100% accurate
+- Clients responsible for reviewing/approving outputs
+- Content belongs to Lumina AI unless stated otherwise
+- Governed by UK law
+
+---
+
+## 🌐 Website Structure
+
+### Main Navigation:
+- Home
+- Solutions
+- How It Works
+- Testimonials
+- About
+- Audit (Free Audit CTA)
+- Contact
+
+### Section IDs (for anchor links):
+- #home
+- #solution
+- #how-it-works
+- #testimonials
+- #about
+- #trust
+- #audit
+- #offer
+- #blog
+- #contact
+
+---
+
+## 🤖 Chatbot Information
+
+**Welcome Message:** "Hi! How can we help you today?"
+
+**Functionality:**
+- 24/7 availability
+- Answers frequently asked questions
+- Collects lead information
+- Provides information about services
+- Can parse markdown links: [text](url)
+- Multi-language support (English/Spanish)
+- Integrated with n8n webhook: https://n8n.srv1022003.hstgr.cloud/webhook/lumina-ai-chat-superbot
+
+---
+
+## 📱 Social Media Presence
+
+- **Facebook:** https://www.facebook.com/profile.php?id=61582584809466
+- **Instagram:** https://www.instagram.com/lumina_ai_uk
+- **LinkedIn:** https://www.linkedin.com/company/luminaai-solutions/
+
+---
+
+## 🎯 Target Audience
+
+### Primary Markets:
+- Small and medium-sized businesses (SMBs)
+- Service-based businesses
+- E-commerce stores
+- Healthcare professionals
+- Consultants and coaches
+- Agencies (marketing, digital, creative)
+- Real estate agents
+- SaaS companies
+- Freelancers and contractors
+
+### Business Size:
+- Startups looking to scale efficiently
+- Growing businesses (5-50 employees)
+- Established SMBs seeking optimization
+
+### Geographic Focus:
+- United Kingdom (primary)
+- English-speaking markets globally
+
+---
+
+## 💡 Key Differentiators
+
+1. **Affordable Entry Point:** Starting from £500 (vs. £3,000-10,000 industry standard)
+2. **No Tech Skills Required:** User-friendly systems that clients can manage
+3. **Free Audit First:** Clarity call before commitment
+4. **Human-Centered Approach:** Focus on what should remain human
+5. **Quick Implementation:** Faster than traditional agencies
+6. **GDPR Compliant:** UK-based with strong data protection
+7. **Scalable Solutions:** Systems that grow with the business
+8. **Honest Recommendations:** Advise what not to automate
+
+---
+
+## 📊 Value Metrics
+
+### Time Savings Range:
+- Minimum: 5 hours/week
+- Maximum: 40 hours/week
+- Average: 10-20 hours/week
+
+### Cost Savings Range:
+- Minimum: £500/month
+- Maximum: £8,000/month
+- Average: £1,500-3,000/month
+
+### ROI Timeline:
+- Initial results: Within weeks
+- Full ROI: 1-3 months typically
+- Long-term benefits: Compound over time
+
+---
+
+## 🔧 Technology Stack
+
+### Primary Tools:
+- **n8n:** Workflow automation platform
+- **OpenAI:** AI integrations for natural language
+- **Vercel:** Website hosting (EU/US servers)
+- **Next.js:** Web framework
+- **React:** Frontend library
+- **Material-UI:** UI component library
+- **TypeScript:** Programming language
+
+### Integration Capabilities:
+- Google Workspace (Gmail, Calendar, Drive, Sheets)
+- Microsoft 365 (Outlook, Teams)
+- CRM platforms (various)
+- Notion, ClickUp, Airtable
+- WhatsApp Business API
+- Telegram Bot API
+- Email marketing platforms
+- Payment processors
+- Social media platforms
+- Calendar systems
+- Project management tools
+
+---
+
+## 📈 Business Model
+
+### Revenue Streams:
+1. **Initial Setup Fees:** £500+ per automation project
+2. **Ongoing Support & Maintenance:** Optional monthly retainers
+3. **Custom Development:** Tailored solutions for specific needs
+4. **Landing Page Creation:** Website development services
+
+### Service Delivery:
+1. Discovery call (free)
+2. Audit and blueprint creation
+3. Implementation and testing
+4. Handover and training
+5. Optional ongoing support
+
+---
+
+## 🎓 Educational Content
+
+### Blog Topics (Planned):
+- Automation tips and tricks
+- Case studies and success stories
+- Industry-specific automation guides
+- AI technology updates
+- Business process optimization
+- Tool comparisons and reviews
+
+### Newsletter:
+- Latest automation tips
+- Case studies
+- Industry insights
+- Product updates
+
+---
+
+## 🌍 Multilingual Support
+
+### Supported Languages:
+- English (primary)
+- Spanish (Español)
+
+### Language-Specific URLs:
+- English: /en/[page]
+- Spanish: /es/[page]
+
+---
+
+## 📞 Customer Journey
+
+### Awareness Stage:
+- Land on website via search/social
+- Learn about automation benefits
+- See problem/solution fit
+- Read testimonials
+
+### Consideration Stage:
+- Request free audit
+- Receive custom automation roadmap
+- Understand time/cost savings
+- Review pricing options
+
+### Decision Stage:
+- Book discovery call
+- Discuss specific needs
+- Receive quote
+- Approve project
+
+### Implementation Stage:
+- Blueprint creation
+- System build and testing
+- Training and handover
+- Go-live
+
+### Retention Stage:
+- Optional ongoing support
+- Updates and optimization
+- Additional automation projects
+- Referrals and testimonials
+
+---
+
+## 🎯 SEO Keywords
+
+### Primary Keywords:
+- Business automation
+- AI automation
+- Workflow automation
+- Process automation
+- Small business automation
+- AI for small business
+
+### Service-Specific Keywords:
+- Email automation
+- Booking system automation
+- WhatsApp Business automation
+- Chatbot development
+- CRM integration
+- Invoice automation
+- Lead generation automation
+- Customer support automation
+
+### Location-Based:
+- UK automation services
+- Business automation UK
+- AI solutions United Kingdom
+
+---
+
+## 📋 Compliance & Standards
+
+### Regulations:
+- UK GDPR compliant
+- Data Protection Act 2018
+- UK privacy laws
+
+### Security Measures:
+- End-to-end encryption
+- Secure data storage
+- Access controls
+- Regular security audits
+- GDPR-compliant tool selection
+
+### Data Handling:
+- Minimal data collection
+- Purpose-limited processing
+- Time-limited retention
+- User rights respected (access, deletion, portability)
+- Transparent privacy policy
+
+---
+
+**End of System Information Document**
+
+*This document contains all user-facing information from the LuminaAI landing page and business systems. It excludes technical implementation details and focuses on customer-relevant content for knowledge base and AI training purposes.*
+

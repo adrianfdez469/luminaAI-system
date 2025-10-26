@@ -46,6 +46,7 @@ export default function ChatbotWidget() {
   const [isLoading, setIsLoading] = useState(false);
   const [sessionId, setSessionId] = useState<string>('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   // Generate or retrieve sessionId
   useEffect(() => {
@@ -70,6 +71,27 @@ export default function ChatbotWidget() {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  // Detect #lumi-chat hash and open chat automatically
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash === '#lumi-chat') {
+      setIsOpen(true);
+      // Wait for chat to render, then focus input
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 300);
+    }
+  }, []);
+
+  // Focus input when chat opens
+  useEffect(() => {
+    if (isOpen && !isMaximized) {
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 100);
+    }
+  }, [isOpen, isMaximized]);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -231,7 +253,8 @@ export default function ChatbotWidget() {
               elevation={8}
               sx={{
                 width: isMaximized ? '100vw' : { xs: 'calc(100vw - 48px)', sm: 380 },
-                height: isMaximized ? '100vh' : 500,
+                height: isMaximized ? '100dvh' : 500, // Use dynamic viewport height for mobile
+                maxHeight: isMaximized ? '100dvh' : 500,
                 display: 'flex',
                 flexDirection: 'column',
                 borderRadius: isMaximized ? 0 : 3,
@@ -247,6 +270,7 @@ export default function ChatbotWidget() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
+                  flexShrink: 0, // Prevent header from shrinking
                 }}
               >
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
@@ -280,7 +304,9 @@ export default function ChatbotWidget() {
               <Box
                 sx={{
                   flexGrow: 1,
+                  minHeight: 0, // Allow this area to shrink when keyboard appears
                   overflowY: 'auto',
+                  overflowX: 'hidden',
                   p: 2,
                   backgroundColor: 'background.default',
                   display: 'flex',
@@ -362,7 +388,7 @@ export default function ChatbotWidget() {
                 <div ref={messagesEndRef} />
               </Box>
 
-              <Divider />
+              <Divider sx={{ flexShrink: 0 }} />
 
               {/* Input */}
               <Box
@@ -372,6 +398,10 @@ export default function ChatbotWidget() {
                   display: 'flex',
                   gap: 1,
                   alignItems: 'flex-end',
+                  flexShrink: 0, // Prevent input area from shrinking
+                  ...(isMaximized && {
+                    paddingBottom: 'max(16px, env(safe-area-inset-bottom))', // Handle iOS safe area
+                  }),
                 }}
               >
                 <TextField
@@ -384,6 +414,7 @@ export default function ChatbotWidget() {
                   onKeyPress={handleKeyPress}
                   variant="outlined"
                   disabled={isLoading}
+                  inputRef={inputRef}
                   sx={{
                     '& .MuiOutlinedInput-root': {
                       padding: '8px 14px',
@@ -415,28 +446,30 @@ export default function ChatbotWidget() {
       </AnimatePresence>
 
       {/* Floating Action Button */}
-      <Fab
-        color="primary"
-        aria-label="chat"
-        onClick={handleToggle}
-        data-chatbot-trigger="true"
-        sx={{
-          position: 'fixed',
-          bottom: 24,
-          right: 24,
-          zIndex: 1300,
-          width: 64,
-          height: 64,
-          boxShadow: 4,
-          '&:hover': {
-            transform: 'scale(1.1)',
-            boxShadow: 6,
-          },
-          transition: 'all 0.3s',
-        }}
-      >
-        {isOpen ? <CloseIcon sx={{ fontSize: 28 }} /> : <ChatIcon sx={{ fontSize: 28 }} />}
-      </Fab>
+      {(!isOpen || !isMaximized) && (
+        <Fab
+          color="primary"
+          aria-label="chat"
+          onClick={handleToggle}
+          data-chatbot-trigger="true"
+          sx={{
+            position: 'fixed',
+            bottom: 24,
+            right: 24,
+            zIndex: 1300,
+            width: 64,
+            height: 64,
+            boxShadow: 4,
+            '&:hover': {
+              transform: 'scale(1.1)',
+              boxShadow: 6,
+            },
+            transition: 'all 0.3s',
+          }}
+        >
+          {isOpen ? <CloseIcon sx={{ fontSize: 28 }} /> : <ChatIcon sx={{ fontSize: 28 }} />}
+        </Fab>
+      )}
     </>
   );
 }

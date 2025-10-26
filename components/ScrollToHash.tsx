@@ -10,7 +10,8 @@ export default function ScrollToHash() {
     // Check if there's a hash in the URL
     const hash = window.location.hash;
     
-    if (hash) {
+    // Ignore special hashes (like #lumi-chat for chatbot)
+    if (hash && hash !== '#lumi-chat') {
       // Wait for content to be fully rendered
       setTimeout(() => {
         const id = hash.replace('#', '');
