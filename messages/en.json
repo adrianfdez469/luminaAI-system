@@ -266,7 +266,8 @@
     "person2Bio": "I'm Liset Hernandez, an entrepreneur based in the UK, passionate about using AI to make business simple and human again. After years of working across different industries, I discovered how automation can transform not just workflows, but people's lives — freeing time for creativity, growth, and purpose.",
     "person2Fun": "Fun fact: Proud mom 👶",
     "person2LinkedIn": "https://www.linkedin.com/in/lisset-hernandez",
-    "connectLinkedIn": "Connect on LinkedIn"
+    "connectLinkedIn": "Connect on LinkedIn",
+    "connectInstagram": "Connect on Instagram"
   },
   "trust": {
     "title": "Your Privacy, Our Priority",
@@ -360,7 +361,9 @@
     "description": "Intelligent automation solutions for modern businesses.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "gdprNotice": "We respect your privacy. Lumina AI complies with the UK GDPR and processes all personal data securely and transparently. Read our Privacy Policy for more details.",
+    "gdprNotice": "We respect your privacy. Lumina AI complies with the UK GDPR and processes all personal data securely and transparently. Read our",
+    "gdprNoticeForMoreDetailsLink": "Privacy Policy",
+    "gdprNotice23": "for more details.",
     "links": "Links",
     "legal": "Legal",
     "home": "Home",

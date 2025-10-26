@@ -7,8 +7,7 @@ import { useTranslations } from 'next-intl';
 import CodeIcon from '@mui/icons-material/Code';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import Image from 'next/image';
 
 export default function AboutSection() {
@@ -31,7 +30,7 @@ export default function AboutSection() {
       roleKey: 'person2Role',
       bioKey: 'person2Bio',
       funKey: 'person2Fun',
-      linkedInKey: 'https://www.linkedin.com/in/lisset-hernandez/',
+      instagramKey: 'https://www.instagram.com/creativa_lilo/',
       icon: <BusinessCenterIcon sx={{ fontSize: 32 }} />,
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       imagePlaceholder: 'LH',
@@ -262,6 +261,7 @@ export default function AboutSection() {
                       />
 
                       {/* LinkedIn Button */}
+                      {member.linkedInKey && (
                       <Button
                         variant="outlined"
                         startIcon={<LinkedInIcon />}
@@ -287,7 +287,35 @@ export default function AboutSection() {
                       >
                         {t('connectLinkedIn')}
                       </Button>
-                    </Box>
+                      )}
+                      {member.instagramKey && (
+                        <Button
+                          variant="outlined"
+                          startIcon={<InstagramIcon />}
+                          href={member.instagramKey}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          sx={{
+                            borderWidth: 2,
+                            fontWeight: 600,
+                            fontSize: { xs: '0.85rem', md: '0.9rem' },
+                            py: 1,
+                            px: 3,
+                            borderColor: '#E1306C',
+                            color: '#E1306C',
+                            '&:hover': {
+                              borderWidth: 2,
+                              background: '#E1306C',
+                              color: 'white',
+                              transform: 'translateY(-2px)',
+                            },
+                            transition: 'all 0.3s',
+                          }}
+                        >
+                          {t('connectInstagram')}
+                        </Button>
+                      )}
+                      </Box>
                   </Box>
                 </Paper>
               </motion.div>

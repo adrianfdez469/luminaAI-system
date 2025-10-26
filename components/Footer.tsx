@@ -108,7 +108,9 @@ export default function Footer() {
             align="center"
             sx={{ mb: 2, px: { xs: 2, md: 4 } }}
           >
-            {t('gdprNotice')}
+            {t('gdprNotice')} <Link href={`/${locale}/privacy`} color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
+              {t('gdprNoticeForMoreDetailsLink')}
+            </Link> {t('gdprNotice23')}
           </Typography>
           <Typography variant="body2" color="text.secondary" align="center">
             © {currentYear} LuminaAI. {t('rights')}
