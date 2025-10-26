@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   Box,
   Fab,
@@ -11,6 +11,7 @@ import {
   Fade,
   Avatar,
   Divider,
+  CircularProgress,
 } from '@mui/material';
 import ChatIcon from '@mui/icons-material/Chat';
 import CloseIcon from '@mui/icons-material/Close';
@@ -38,35 +39,145 @@ export default function ChatbotWidget() {
     },
   ]);
   const [inputValue, setInputValue] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [sessionId, setSessionId] = useState<string>('');
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Generate or retrieve sessionId
+  useEffect(() => {
+    const STORAGE_KEY = 'lumina_chat_session_id';
+    
+    // Check if sessionId exists in localStorage
+    let existingSessionId = localStorage.getItem(STORAGE_KEY);
+    
+    if (!existingSessionId) {
+      // Generate new unique sessionId
+      existingSessionId = `session_${Date.now()}_${Math.random().toString(36).substring(2, 15)}`;
+      localStorage.setItem(STORAGE_KEY, existingSessionId);
+    }
+    
+    setSessionId(existingSessionId);
+  }, []);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleSendMessage = () => {
-    if (!inputValue.trim()) return;
+  // Parse markdown links [text](url) and convert to clickable links
+  const parseMessageLinks = (text: string) => {
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    
+    // Regex to match markdown links: [text](url)
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    let match;
+    
+    while ((match = linkRegex.exec(text)) !== null) {
+      // Add text before the link
+      if (match.index > lastIndex) {
+        parts.push(text.substring(lastIndex, match.index));
+      }
+      
+      // Add the link as an anchor tag
+      const linkText = match[1];
+      const url = match[2];
+      parts.push(
+        <a
+          key={match.index}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: 'inherit',
+            textDecoration: 'underline',
+            fontWeight: 600,
+          }}
+        >
+          {linkText}
+        </a>
+      );
+      
+      lastIndex = match.index + match[0].length;
+    }
+    
+    // Add remaining text after the last link
+    if (lastIndex < text.length) {
+      parts.push(text.substring(lastIndex));
+    }
+    
+    return parts.length > 0 ? parts : text;
+  };
 
+  const handleSendMessage = async () => {
+    if (!inputValue.trim() || isLoading) return;
+
+    const userMessageText = inputValue;
+    
     // Add user message
     const userMessage: Message = {
-      id: messages.length + 1,
-      text: inputValue,
+      id: Date.now(),
+      text: userMessageText,
       sender: 'user',
       timestamp: new Date(),
     };
 
-    setMessages([...messages, userMessage]);
+    setMessages((prev) => [...prev, userMessage]);
     setInputValue('');
+    setIsLoading(true);
 
-    // Simulate bot response (placeholder)
-    setTimeout(() => {
+    try {
+      // Send message to n8n webhook
+      const response = await fetch(
+        'https://n8n.srv1022003.hstgr.cloud/webhook/lumina-ai-chat-superbot',
+        {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: userMessageText,
+          sessionId: sessionId,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to get response from bot');
+      }
+
+      const data = await response.json();
+      
+      // Add bot response
       const botMessage: Message = {
-        id: messages.length + 2,
-        text: t('offlineMessage'),
+        id: Date.now() + 1,
+        text: data.output || 'Lo siento, no pude procesar tu mensaje.',
         sender: 'bot',
         timestamp: new Date(),
       };
+
       setMessages((prev) => [...prev, botMessage]);
-    }, 1000);
+    } catch (error) {
+      console.error('Error sending message:', error);
+      
+      // Add error message
+      const errorMessage: Message = {
+        id: Date.now() + 1,
+        text: 'Lo siento, hubo un error al procesar tu mensaje. Por favor, intenta de nuevo.',
+        sender: 'bot',
+        timestamp: new Date(),
+      };
+
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -166,7 +277,9 @@ export default function ChatbotWidget() {
                         borderColor: 'divider',
                       }}
                     >
-                      <Typography variant="body2">{message.text}</Typography>
+                      <Typography variant="body2" sx={{ whiteSpace: 'pre-wrap' }}>
+                        {parseMessageLinks(message.text)}
+                      </Typography>
                       <Typography
                         variant="caption"
                         sx={{
@@ -184,6 +297,37 @@ export default function ChatbotWidget() {
                     </Paper>
                   </Box>
                 ))}
+
+                {/* Loading indicator */}
+                {isLoading && (
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      justifyContent: 'flex-start',
+                    }}
+                  >
+                    <Paper
+                      elevation={0}
+                      sx={{
+                        p: 1.5,
+                        backgroundColor: 'background.paper',
+                        borderRadius: 2,
+                        border: '1px solid',
+                        borderColor: 'divider',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 1,
+                      }}
+                    >
+                      <CircularProgress size={16} />
+                      <Typography variant="body2" color="text.secondary">
+                        Escribiendo...
+                      </Typography>
+                    </Paper>
+                  </Box>
+                )}
+
+                <div ref={messagesEndRef} />
               </Box>
 
               <Divider />
@@ -205,11 +349,12 @@ export default function ChatbotWidget() {
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyPress={handleKeyPress}
                   variant="outlined"
+                  disabled={isLoading}
                 />
                 <IconButton
                   color="primary"
                   onClick={handleSendMessage}
-                  disabled={!inputValue.trim()}
+                  disabled={!inputValue.trim() || isLoading}
                   sx={{
                     backgroundColor: 'primary.main',
                     color: 'white',

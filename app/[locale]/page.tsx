@@ -35,7 +35,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <AuditSection />
         {/* <OfferSection /> */}
         {/* <BlogSection /> */}
-        <NewsletterSection />
+        {/* <NewsletterSection /> */}
         <ContactSection />
       </main>
       <Footer />
