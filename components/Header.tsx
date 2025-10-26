@@ -80,6 +80,9 @@ export default function Header() {
 
   const breadcrumbs = generateBreadcrumbs();
 
+  // Check if we're on the home page
+  const isHomePage = pathname === `/${locale}` || pathname === `/${locale}/`;
+
   const navItems = [
     { label: t('home'), href: '#home' },
     { label: t('services'), href: '#solution' },
@@ -113,36 +116,38 @@ export default function Header() {
       <Box sx={{ py: 2 }}>
         <Logo />
       </Box>
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item.label} disablePadding>
-            <ListItemButton
-              sx={{ textAlign: 'center' }}
-              onClick={() => handleNavClick(item.href)}
+      {isHomePage && (
+        <List>
+          {navItems.map((item) => (
+            <ListItem key={item.label} disablePadding>
+              <ListItemButton
+                sx={{ textAlign: 'center' }}
+                onClick={() => handleNavClick(item.href)}
+              >
+                <ListItemText primary={item.label} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+          {/* CTA Button in Mobile Menu */}
+          <ListItem disablePadding sx={{ px: 2, py: 1 }}>
+            <Button
+              fullWidth
+              variant="contained"
+              onClick={() => handleNavClick('#audit')}
+              sx={{
+                fontWeight: 600,
+                py: 1.5,
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                '&:hover': {
+                  background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
+                },
+              }}
             >
-              <ListItemText primary={item.label} />
-            </ListItemButton>
+              {t('auditCTA')} ✨
+            </Button>
           </ListItem>
-        ))}
-        {/* CTA Button in Mobile Menu */}
-        <ListItem disablePadding sx={{ px: 2, py: 1 }}>
-          <Button
-            fullWidth
-            variant="contained"
-            onClick={() => handleNavClick('#audit')}
-            sx={{
-              fontWeight: 600,
-              py: 1.5,
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-              '&:hover': {
-                background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
-              },
-            }}
-          >
-            {t('auditCTA')} ✨
-          </Button>
-        </ListItem>
-      </List>
+        </List>
+      )}
     </Box>
   );
 
@@ -167,7 +172,7 @@ export default function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            {!isMobile && (
+            {!isMobile && isHomePage && (
               <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
                 {navItems.map((item) => (
                   <Button
