@@ -351,10 +351,17 @@
   },
   "chatbot": {
     "title": "Chat with us",
+    "assistantName": "LuminaAI Assistant",
+    "statusOnline": "Online",
     "placeholder": "Type your message...",
     "send": "Send",
-    "welcomeMessage": "Hi! How can we help you today?",
-    "offlineMessage": "We're currently offline, but leave a message and we'll get back to you!"
+    "typing": "Typing...",
+    "welcomeMessage": "Hi, I'm here to help you understand what automations you need",
+    "offlineMessage": "We're currently offline, but leave a message and we'll get back to you!",
+    "errorDefault": "Sorry, I couldn't process your message.",
+    "errorNetwork": "Sorry, there was an error processing your message. Please try again.",
+    "minimize": "Minimize",
+    "maximize": "Maximize"
   },
   "footer": {
     "rights": "All rights reserved.",

@@ -190,7 +190,7 @@ export default function ChatbotWidget() {
       // Add bot response
       const botMessage: Message = {
         id: Date.now() + 1,
-        text: data.output || 'Lo siento, no pude procesar tu mensaje.',
+        text: data.output || t('errorDefault'),
         sender: 'bot',
         timestamp: new Date(),
       };
@@ -202,7 +202,7 @@ export default function ChatbotWidget() {
       // Add error message
       const errorMessage: Message = {
         id: Date.now() + 1,
-        text: 'Lo siento, hubo un error al procesar tu mensaje. Por favor, intenta de nuevo.',
+        text: t('errorNetwork'),
         sender: 'bot',
         timestamp: new Date(),
       };
@@ -279,10 +279,10 @@ export default function ChatbotWidget() {
                   </Avatar>
                   <Box>
                     <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                      LuminaAI Assistant
+                      {t('assistantName')}
                     </Typography>
                     <Typography variant="caption" sx={{ opacity: 0.9 }}>
-                      Online
+                      {t('statusOnline')}
                     </Typography>
                   </Box>
                 </Box>
@@ -290,7 +290,7 @@ export default function ChatbotWidget() {
                   <IconButton 
                     onClick={handleMaximizeToggle} 
                     sx={{ color: 'white' }}
-                    aria-label={isMaximized ? 'Minimize' : 'Maximize'}
+                    aria-label={isMaximized ? t('minimize') : t('maximize')}
                   >
                     {isMaximized ? <FullscreenExitIcon /> : <FullscreenIcon />}
                   </IconButton>
@@ -379,7 +379,7 @@ export default function ChatbotWidget() {
                     >
                       <CircularProgress size={16} />
                       <Typography variant="body2" color="text.secondary">
-                        Escribiendo...
+                        {t('typing')}
                       </Typography>
                     </Paper>
                   </Box>

@@ -352,10 +352,17 @@
   },
   "chatbot": {
     "title": "Chatea con nosotros",
+    "assistantName": "Asistente LuminaAI",
+    "statusOnline": "En línea",
     "placeholder": "Escribe tu mensaje...",
     "send": "Enviar",
-    "welcomeMessage": "¡Hola! ¿Cómo podemos ayudarte hoy?",
-    "offlineMessage": "Actualmente estamos desconectados, pero deja un mensaje y te responderemos pronto"
+    "typing": "Escribiendo...",
+    "welcomeMessage": "Hola, estoy aquí para ayudarte a entender qué automatizaciones necesitas",
+    "offlineMessage": "Actualmente estamos desconectados, pero deja un mensaje y te responderemos pronto",
+    "errorDefault": "Lo siento, no pude procesar tu mensaje.",
+    "errorNetwork": "Lo siento, hubo un error al procesar tu mensaje. Por favor, intenta de nuevo.",
+    "minimize": "Minimizar",
+    "maximize": "Maximizar"
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
