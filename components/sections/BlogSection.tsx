@@ -21,7 +21,14 @@ export default function BlogSection() {
   const t = useTranslations('blog');
 
   return (
-    <Box id="blog" sx={{ py: 10, backgroundColor: 'background.paper' }}>
+    <Box 
+      id="blog" 
+      sx={{ 
+        py: 10, 
+        backgroundColor: 'background.paper',
+        scrollMarginTop: { xs: '70px', md: '80px' },
+      }}
+    >
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

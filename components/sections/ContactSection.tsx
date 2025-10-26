@@ -82,7 +82,14 @@ export default function ContactSection() {
   };
 
   return (
-    <Box id="contact" sx={{ py: { xs: 6, md: 10 }, backgroundColor: 'background.default' }}>
+    <Box 
+      id="contact" 
+      sx={{ 
+        py: { xs: 6, md: 10 }, 
+        backgroundColor: 'background.default',
+        scrollMarginTop: { xs: '70px', md: '80px' }, // Offset for fixed header
+      }}
+    >
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

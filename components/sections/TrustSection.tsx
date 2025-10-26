@@ -41,6 +41,7 @@ export default function TrustSection() {
             : 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)',
         position: 'relative',
         overflow: 'hidden',
+        scrollMarginTop: { xs: '70px', md: '80px' },
       }}
     >
       {/* Decorative Background Elements */}

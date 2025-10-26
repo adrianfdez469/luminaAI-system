@@ -50,6 +50,7 @@ export default function AboutSection() {
             : 'linear-gradient(180deg, #1e293b 0%, #0f172a 100%)',
         position: 'relative',
         overflow: 'hidden',
+        scrollMarginTop: { xs: '70px', md: '80px' },
       }}
     >
       {/* Decorative Background Elements */}

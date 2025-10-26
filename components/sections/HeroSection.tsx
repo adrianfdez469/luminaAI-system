@@ -49,6 +49,7 @@ export default function HeroSection() {
         pb: { xs: 6, md: 0 },
         position: 'relative',
         overflow: 'hidden',
+        scrollMarginTop: { xs: '70px', md: '80px' },
         backgroundImage: 'url(/images/hero-bg.avif)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',

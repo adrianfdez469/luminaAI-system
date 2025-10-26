@@ -48,7 +48,14 @@ export default function HowItWorksSection() {
   };
 
   return (
-    <Box id="how-it-works" sx={{ py: { xs: 6, md: 10 }, backgroundColor: 'background.default' }}>
+    <Box 
+      id="how-it-works" 
+      sx={{ 
+        py: { xs: 6, md: 10 }, 
+        backgroundColor: 'background.default',
+        scrollMarginTop: { xs: '70px', md: '80px' },
+      }}
+    >
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

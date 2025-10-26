@@ -358,7 +358,14 @@ export default function SolutionSection() {
   };
 
   return (
-    <Box id="solution" sx={{ py: { xs: 6, md: 10 }, backgroundColor: 'background.paper' }}>
+    <Box 
+      id="solution" 
+      sx={{ 
+        py: { xs: 6, md: 10 }, 
+        backgroundColor: 'background.paper',
+        scrollMarginTop: { xs: '70px', md: '80px' },
+      }}
+    >
       <Container maxWidth="lg">
         {/* Header */}
         <motion.div

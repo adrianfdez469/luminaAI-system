@@ -16,6 +16,7 @@ import BlogSection from '@/components/sections/BlogSection';
 import ContactSection from '@/components/sections/ContactSection';
 import NewsletterSection from '@/components/sections/NewsletterSection';
 import ChatbotWidget from '@/components/ChatbotWidget';
+import ScrollToHash from '@/components/ScrollToHash';
 
 export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
@@ -23,6 +24,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
 
   return (
     <Box>
+      <ScrollToHash />
       <Header />
       <main>
         <HeroSection />

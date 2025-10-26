@@ -44,6 +44,7 @@ export default function TestimonialsSection() {
           theme.palette.mode === 'light'
             ? 'linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%)'
             : 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)',
+        scrollMarginTop: { xs: '70px', md: '80px' },
       }}
     >
       <Container maxWidth="lg">

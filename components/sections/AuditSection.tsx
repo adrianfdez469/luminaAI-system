@@ -69,7 +69,14 @@ export default function AuditSection() {
   };
 
   return (
-    <Box id="audit" sx={{ py: { xs: 6, md: 10 }, backgroundColor: 'background.default' }}>
+    <Box 
+      id="audit" 
+      sx={{ 
+        py: { xs: 6, md: 10 }, 
+        backgroundColor: 'background.default',
+        scrollMarginTop: { xs: '70px', md: '80px' },
+      }}
+    >
       <Container maxWidth="lg">
         {/* Header */}
         <motion.div

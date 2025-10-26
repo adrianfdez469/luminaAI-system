@@ -12,11 +12,14 @@ import {
   Avatar,
   Divider,
   CircularProgress,
+  Backdrop,
 } from '@mui/material';
 import ChatIcon from '@mui/icons-material/Chat';
 import CloseIcon from '@mui/icons-material/Close';
 import SendIcon from '@mui/icons-material/Send';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
+import FullscreenIcon from '@mui/icons-material/Fullscreen';
+import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -30,6 +33,7 @@ interface Message {
 export default function ChatbotWidget() {
   const t = useTranslations('chatbot');
   const [isOpen, setIsOpen] = useState(false);
+  const [isMaximized, setIsMaximized] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
@@ -69,6 +73,13 @@ export default function ChatbotWidget() {
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
+    if (!isOpen) {
+      setIsMaximized(false); // Reset maximized state when closing
+    }
+  };
+
+  const handleMaximizeToggle = () => {
+    setIsMaximized(!isMaximized);
   };
 
   // Parse markdown links [text](url) and convert to clickable links
@@ -189,6 +200,16 @@ export default function ChatbotWidget() {
 
   return (
     <>
+      {/* Backdrop */}
+      <Backdrop
+        open={isOpen}
+        sx={{
+          zIndex: 1299,
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        }}
+        onClick={handleToggle}
+      />
+
       {/* Chat Window */}
       <AnimatePresence>
         {isOpen && (
@@ -199,19 +220,21 @@ export default function ChatbotWidget() {
             transition={{ duration: 0.3 }}
             style={{
               position: 'fixed',
-              bottom: 100,
-              right: 24,
+              bottom: isMaximized ? 0 : 100,
+              right: isMaximized ? 0 : 24,
+              top: isMaximized ? 0 : 'auto',
+              left: isMaximized ? 0 : 'auto',
               zIndex: 1300,
             }}
           >
             <Paper
               elevation={8}
               sx={{
-                width: { xs: 'calc(100vw - 48px)', sm: 380 },
-                height: 500,
+                width: isMaximized ? '100vw' : { xs: 'calc(100vw - 48px)', sm: 380 },
+                height: isMaximized ? '100vh' : 500,
                 display: 'flex',
                 flexDirection: 'column',
-                borderRadius: 3,
+                borderRadius: isMaximized ? 0 : 3,
                 overflow: 'hidden',
               }}
             >
@@ -239,9 +262,18 @@ export default function ChatbotWidget() {
                     </Typography>
                   </Box>
                 </Box>
-                <IconButton onClick={handleToggle} sx={{ color: 'white' }}>
-                  <CloseIcon />
-                </IconButton>
+                <Box sx={{ display: 'flex', gap: 0.5 }}>
+                  <IconButton 
+                    onClick={handleMaximizeToggle} 
+                    sx={{ color: 'white' }}
+                    aria-label={isMaximized ? 'Minimize' : 'Maximize'}
+                  >
+                    {isMaximized ? <FullscreenExitIcon /> : <FullscreenIcon />}
+                  </IconButton>
+                  <IconButton onClick={handleToggle} sx={{ color: 'white' }}>
+                    <CloseIcon />
+                  </IconButton>
+                </Box>
               </Box>
 
               {/* Messages */}
@@ -339,17 +371,24 @@ export default function ChatbotWidget() {
                   backgroundColor: 'background.paper',
                   display: 'flex',
                   gap: 1,
+                  alignItems: 'flex-end',
                 }}
               >
                 <TextField
                   fullWidth
-                  size="small"
+                  multiline
+                  maxRows={3}
                   placeholder={t('placeholder')}
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyPress={handleKeyPress}
                   variant="outlined"
                   disabled={isLoading}
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      padding: '8px 14px',
+                    },
+                  }}
                 />
                 <IconButton
                   color="primary"
@@ -358,6 +397,7 @@ export default function ChatbotWidget() {
                   sx={{
                     backgroundColor: 'primary.main',
                     color: 'white',
+                    flexShrink: 0,
                     '&:hover': {
                       backgroundColor: 'primary.dark',
                     },

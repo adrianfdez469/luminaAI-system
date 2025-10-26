@@ -36,6 +36,7 @@ export default function OfferSection() {
         color: 'white',
         position: 'relative',
         overflow: 'hidden',
+        scrollMarginTop: { xs: '70px', md: '80px' },
       }}
     >
       {/* Decorative elements */}
