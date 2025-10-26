@@ -98,7 +98,19 @@ export default function HeroSection() {
                 lineHeight: { xs: 1.2, md: 1.1 },
               }}
             >
-              {t('title')}
+              {t('title1')}
+            </Typography>
+            <Typography
+              variant="h1"
+              sx={{
+                mb: { xs: 4, md: 9 },
+                fontWeight: 700,
+                fontSize: { xs: '1.8rem', sm: '2rem', md: '3rem', lg: '3.5rem' },
+                textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)',
+                lineHeight: { xs: 1.2, md: 1.1 },
+              }}
+            >
+              {t('title2')}
             </Typography>
 
             {/* Description */}
@@ -108,7 +120,7 @@ export default function HeroSection() {
                 mb: { xs: 3, md: 4 },
                 maxWidth: '800px',
                 mx: 'auto',
-                fontSize: { xs: '0.95rem', sm: '1.05rem', md: '1.15rem' },
+                fontSize: { xs: '1.2rem', sm: '1.3rem', md: '1.5rem' },
                 fontWeight: 500,
                 lineHeight: 1.6,
                 px: { xs: 2, sm: 0 },
@@ -125,10 +137,10 @@ export default function HeroSection() {
                 mb: { xs: 1.5, md: 2 },
                 maxWidth: '800px',
                 mx: 'auto',
-                fontSize: { xs: '1rem', sm: '1.1rem', md: '1.3rem', lg: '1.5rem' },
+                fontSize: { xs: '0.9rem', sm: '1rem', md: '1.1rem', lg: '1.2rem' },
                 fontWeight: 400,
                 lineHeight: { xs: 1.5, md: 1.6 },
-                textAlign: { xs: 'center', sm: 'left' },
+                textAlign: 'center',//{ xs: 'center', sm: 'left' },
                 px: { xs: 2, sm: 0 },
                 textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 1px 4px rgba(0,0,0,0.3)',
               }}
