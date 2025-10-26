@@ -115,13 +115,6 @@ export default function ContactSection() {
             >
               {t('subtitle')}
             </Typography>
-            <Typography 
-              variant="body1" 
-              color="text.secondary"
-              sx={{ fontSize: { xs: '0.9rem', sm: '1rem' } }}
-            >
-              {t('chooseMethod')}
-            </Typography>
           </Box>
         </motion.div>
 
