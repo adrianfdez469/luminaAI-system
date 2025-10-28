@@ -10,9 +10,9 @@ export default function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'LuminaAI Solutions',
-    alternateName: 'LuminaAI',
-    url: 'https://luminaai.com',
-    logo: 'https://luminaai.com/android-chrome-512x512.png',
+    alternateName: 'LuminaAI Solutions',
+    url: 'https://luminaaisolutions.co.uk',
+    logo: 'https://luminaaisolutions.co.uk/android-chrome-512x512.png',
     description: isSpanish
       ? 'Soluciones de automatización inteligente con IA para negocios modernos. Automatización de correos, chatbots, WhatsApp Business y más.'
       : 'Intelligent AI automation solutions for modern businesses. Email automation, chatbots, WhatsApp Business and more.',
@@ -52,13 +52,13 @@ export default function StructuredData() {
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'LuminaAI',
-    url: 'https://luminaai.com',
+    name: 'LuminaAI Solutions',
+    url: 'https://luminaaisolutions.co.uk',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://luminaai.com/{locale}?q={search_term_string}',
+        urlTemplate: 'https://luminaaisolutions.co.uk/{locale}?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
@@ -133,7 +133,7 @@ export default function StructuredData() {
         '@type': 'ListItem',
         position: 1,
         name: isSpanish ? 'Inicio' : 'Home',
-        item: `https://luminaai.com/${locale}`,
+        item: `https://luminaaisolutions.co.uk/${locale}`,
       },
     ],
   };

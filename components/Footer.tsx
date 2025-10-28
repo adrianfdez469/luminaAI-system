@@ -113,7 +113,7 @@ export default function Footer() {
             </Link> {t('gdprNotice23')}
           </Typography>
           <Typography variant="body2" color="text.secondary" align="center">
-            © {currentYear} LuminaAI. {t('rights')}
+            © {currentYear} LuminaAI Solutions. {t('rights')}
           </Typography>
         </Box>
       </Container>

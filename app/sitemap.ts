@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://luminaai.com';
+  const baseUrl = 'https://luminaaisolutions.co.uk';
   const currentDate = new Date();
 
   // Main pages for each locale

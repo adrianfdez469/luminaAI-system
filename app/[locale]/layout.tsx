@@ -18,12 +18,12 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'hero' });
 
   const isSpanish = locale === 'es';
-  const baseUrl = 'https://luminaai.com';
+  const baseUrl = 'https://luminaaisolutions.co.uk';
 
   return {
     title: isSpanish
-      ? 'LuminaAI - Automatización Inteligente para Negocios'
-      : 'LuminaAI - Intelligent Business Automation',
+      ? 'LuminaAI Solutions - Automatización Inteligente para Negocios'
+      : 'LuminaAI Solutions - Intelligent Business Automation',
     description: t('description'),
     keywords: isSpanish
       ? [
@@ -60,11 +60,11 @@ export async function generateMetadata({
     },
     openGraph: {
       title: isSpanish
-        ? 'LuminaAI - Automatización Inteligente para Negocios'
-        : 'LuminaAI - Intelligent Business Automation',
+        ? 'LuminaAI Solutions - Automatización Inteligente para Negocios'
+        : 'LuminaAI Solutions - Intelligent Business Automation',
       description: t('description'),
       url: `${baseUrl}/${locale}`,
-      siteName: 'LuminaAI',
+      siteName: 'LuminaAI Solutions',
       type: 'website',
       locale: isSpanish ? 'es_ES' : 'en_US',
       alternateLocale: isSpanish ? 'en_US' : 'es_ES',
@@ -73,15 +73,15 @@ export async function generateMetadata({
           url: `${baseUrl}/images/hero-bg.avif`,
           width: 1200,
           height: 630,
-          alt: isSpanish ? 'LuminaAI - Automatización de Negocios' : 'LuminaAI - Business Automation',
+          alt: isSpanish ? 'LuminaAI Solutions - Automatización de Negocios' : 'LuminaAI Solutions - Business Automation',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       title: isSpanish
-        ? 'LuminaAI - Automatización Inteligente para Negocios'
-        : 'LuminaAI - Intelligent Business Automation',
+        ? 'LuminaAI Solutions - Automatización Inteligente para Negocios'
+        : 'LuminaAI Solutions - Intelligent Business Automation',
       description: t('description'),
       images: [`${baseUrl}/images/hero-bg.avif`],
     },
