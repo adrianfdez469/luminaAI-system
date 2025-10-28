@@ -57,6 +57,7 @@ export default function TestimonialsSection() {
         >
           <Box sx={{ textAlign: 'center', mb: { xs: 6, md: 8 } }}>
             <Typography
+              component="h2"
               variant="h2"
               sx={{
                 fontWeight: 800,
@@ -71,6 +72,7 @@ export default function TestimonialsSection() {
               {t('title')}
             </Typography>
             <Typography
+              component="p"
               variant="h6"
               sx={{
                 color: 'text.secondary',

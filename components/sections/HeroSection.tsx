@@ -90,6 +90,7 @@ export default function HeroSection() {
         >
           <Box sx={{ textAlign: 'center', color: 'white' }}>
             <Typography
+              component="h1"
               variant="h1"
               sx={{
                 mb: { xs: 1.5, md: 2 },
@@ -102,7 +103,7 @@ export default function HeroSection() {
               {t('title1')}
             </Typography>
             <Typography
-              variant="h1"
+              component="h2"
               sx={{
                 mb: { xs: 4, md: 9 },
                 fontWeight: 700,

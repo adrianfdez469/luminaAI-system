@@ -99,6 +99,7 @@ export default function ContactSection() {
         >
           <Box sx={{ textAlign: 'center', mb: { xs: 4, md: 6 }, px: { xs: 2, sm: 0 } }}>
             <Typography 
+              component="h2"
               variant="h2" 
               sx={{ 
                 mb: { xs: 1.5, md: 2 }, 
@@ -109,6 +110,7 @@ export default function ContactSection() {
               {t('title')}
             </Typography>
             <Typography 
+              component="p"
               variant="h6" 
               color="text.secondary"
               sx={{ fontSize: { xs: '1rem', sm: '1.1rem', md: '1.25rem' }, mb: 2 }}

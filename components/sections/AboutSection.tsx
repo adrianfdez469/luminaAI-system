@@ -88,6 +88,7 @@ export default function AboutSection() {
         >
           <Box sx={{ textAlign: 'center', mb: { xs: 5, md: 7 } }}>
             <Typography
+              component="h2"
               variant="h2"
               sx={{
                 fontWeight: 800,
@@ -102,6 +103,7 @@ export default function AboutSection() {
               {t('title')}
             </Typography>
             <Typography
+              component="p"
               variant="h6"
               sx={{
                 color: 'text.secondary',

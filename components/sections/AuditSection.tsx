@@ -87,6 +87,7 @@ export default function AuditSection() {
         >
           <Box sx={{ textAlign: 'center', mb: { xs: 5, md: 8 }, px: { xs: 2, sm: 0 } }}>
             <Typography 
+              component="h2"
               variant="h2" 
               sx={{ 
                 mb: { xs: 2, md: 3 }, 
@@ -97,6 +98,7 @@ export default function AuditSection() {
               {t('title')}
             </Typography>
             <Typography
+              component="p"
               variant="h6"
               color="text.secondary"
               sx={{ 
