@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import {
   Box,
   Fab,
@@ -67,18 +67,39 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
     setSessionId(existingSessionId);
   }, []);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToNewMessage = () => {
+    // En modo fullscreen, no hacer auto-scroll (arreglo #4)
+    if (isFullscreenMode) return;
+    
+    // Si hay mensajes, hacer scroll solo al inicio del último mensaje (arreglo #3)
+    // Esto permite que el usuario vea que llegó un mensaje sin forzarlo al final
+    if (messages.length > 0) {
+      const lastMessageElement = messagesEndRef.current?.previousElementSibling;
+      if (lastMessageElement) {
+        lastMessageElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
   };
 
   useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+    // Solo hacer scroll automático en widget mode y cuando hay mensajes nuevos
+    if (!isFullscreenMode && messages.length > 1) {
+      scrollToNewMessage();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [messages.length, isFullscreenMode]);
 
   // Auto-focus and hash detection
   useEffect(() => {
     if (isFullscreenMode) {
-      setTimeout(() => inputRef.current?.focus(), 300);
+      // En fullscreen, scroll al top y focus en input (arreglo #4)
+      setTimeout(() => {
+        const messagesContainer = messagesEndRef.current?.parentElement;
+        if (messagesContainer) {
+          messagesContainer.scrollTop = 0;
+        }
+        inputRef.current?.focus();
+      }, 300);
     } else {
       const hash = window.location.hash;
       if (hash === '#lumi-chat') {
@@ -95,6 +116,27 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
     }
   }, [isOpen, isMaximized, isFullscreenMode]);
 
+  // Prevenir scroll de la página cuando el widget está abierto (arreglo #1)
+  useEffect(() => {
+    if (isOpen && !isFullscreenMode) {
+      // Guardar el scroll actual
+      const scrollY = window.scrollY;
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
+
+      return () => {
+        // Restaurar el scroll
+        document.body.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
+        window.scrollTo(0, scrollY);
+      };
+    }
+  }, [isOpen, isFullscreenMode]);
+
   const handleToggle = () => {
     if (!isFullscreenMode) {
       setIsOpen(!isOpen);
@@ -109,7 +151,7 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
   };
 
   // Parse markdown links [text](url) and convert to clickable links
-  const parseMessageLinks = (text: string) => {
+  const parseMessageLinks = useCallback((text: string) => {
     const parts: React.ReactNode[] = [];
     let lastIndex = 0;
     const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
@@ -146,9 +188,9 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
     }
     
     return parts.length > 0 ? parts : text;
-  };
+  }, []);
 
-  const handleSendMessage = async () => {
+  const handleSendMessage = useCallback(async () => {
     if (!inputValue.trim() || isLoading) return;
 
     const userMessageText = inputValue;
@@ -203,17 +245,21 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [inputValue, isLoading, sessionId, t]);
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyPress = useCallback((e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSendMessage();
     }
-  };
+  }, [handleSendMessage]);
 
-  // Chat UI Component (shared between both modes)
-  const ChatUI = () => (
+  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+  }, []);
+
+  // Chat UI JSX (shared between both modes)
+  const renderChatUI = () => (
     <Paper
       elevation={isFullscreenMode ? 4 : 8}
       sx={{
@@ -227,12 +273,15 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
           : isMaximized
           ? '100dvh'
           : 500,
-        maxHeight: isFullscreenMode ? undefined : isMaximized ? '100dvh' : 500,
+        // En fullscreen, altura fija sin min/max (arreglo #4)
+        ...(isFullscreenMode 
+          ? {} 
+          : { maxHeight: isMaximized ? '100dvh' : 500 }
+        ),
         display: 'flex',
         flexDirection: 'column',
         borderRadius: isFullscreenMode ? 3 : isMaximized ? 0 : 3,
         overflow: 'hidden',
-        minHeight: isFullscreenMode ? { xs: 'calc(100vh - 180px)', md: 'calc(100vh - 200px)' } : undefined,
       }}
     >
       {/* Header */}
@@ -386,16 +435,18 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
         }}
       >
         <TextField
+          key="chat-input"
           fullWidth
           multiline
           maxRows={isFullscreenMode ? 4 : 3}
           placeholder={t('placeholder')}
           value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          onChange={handleInputChange}
           onKeyPress={handleKeyPress}
           variant="outlined"
           disabled={isLoading}
           inputRef={inputRef}
+          autoComplete="off"
           sx={{
             '& .MuiOutlinedInput-root': {
               padding: isFullscreenMode ? '12px 16px' : '8px 14px',
@@ -439,7 +490,7 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
           minHeight: 0,
         }}
       >
-        <ChatUI />
+        {renderChatUI()}
       </Container>
     );
   }
@@ -461,26 +512,26 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 20 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.3 }}
             style={{
               position: 'fixed',
-              bottom: isMaximized ? 0 : 100,
+              bottom: isMaximized ? 0 : 24,
               right: isMaximized ? 0 : 24,
               top: isMaximized ? 0 : 'auto',
               left: isMaximized ? 0 : 'auto',
               zIndex: 1300,
             }}
           >
-            <ChatUI />
+            {renderChatUI()}
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* Floating Action Button */}
-      {(!isOpen || !isMaximized) && (
+      {/* Floating Action Button - Solo visible cuando el chat está cerrado */}
+      {!isOpen && (
         <Fab
           color="primary"
           aria-label="chat"
@@ -501,7 +552,7 @@ export default function Chatbot({ mode = 'widget' }: ChatbotProps) {
             transition: 'all 0.3s',
           }}
         >
-          {isOpen ? <CloseIcon sx={{ fontSize: 28 }} /> : <ChatIcon sx={{ fontSize: 28 }} />}
+          <ChatIcon sx={{ fontSize: 28 }} />
         </Fab>
       )}
     </>

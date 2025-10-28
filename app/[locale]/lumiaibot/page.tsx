@@ -2,7 +2,6 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Chatbot from '@/components/Chatbot';
 
 export default function LumiAIBotPage({ params: { locale } }: { params: { locale: string } }) {
@@ -15,7 +14,6 @@ export default function LumiAIBotPage({ params: { locale } }: { params: { locale
       <Box component="main" sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
         <Chatbot mode="fullscreen" />
       </Box>
-      <Footer />
     </Box>
   );
 }
