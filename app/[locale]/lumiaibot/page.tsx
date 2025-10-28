@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ChatbotFullScreen from '@/components/ChatbotFullScreen';
+import Chatbot from '@/components/Chatbot';
 
 export default function LumiAIBotPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
@@ -13,7 +13,7 @@ export default function LumiAIBotPage({ params: { locale } }: { params: { locale
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Header />
       <Box component="main" sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-        <ChatbotFullScreen />
+        <Chatbot mode="fullscreen" />
       </Box>
       <Footer />
     </Box>
