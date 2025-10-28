@@ -4,6 +4,7 @@ import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server
 import { ThemeProvider } from '@/lib/ThemeProvider';
 import { routing } from '@/i18n/routing';
 import StructuredData from '@/components/StructuredData';
+import { Analytics } from '@vercel/analytics/next';
 import '@/styles/globals.css';
 
 export function generateStaticParams() {
@@ -146,6 +147,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>{children}</ThemeProvider>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
