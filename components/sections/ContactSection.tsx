@@ -20,6 +20,7 @@ import { useForm } from 'react-hook-form';
 import SendIcon from '@mui/icons-material/Send';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
+import { useLocale } from 'next-intl';
 
 interface FormData {
   name: string;
@@ -39,6 +40,7 @@ export default function ContactSection() {
     reset,
     formState: { errors },
   } = useForm<FormData>();
+  const locale = useLocale(); // 'en' o 'es'
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
@@ -46,7 +48,9 @@ export default function ContactSection() {
 
     try {
       // Send data to n8n webhook
-      const response = await fetch('https://n8n.srv1022003.hstgr.cloud/webhook/send-email-to-lumina', {
+      const response = await fetch(
+        `https://n8n.srv1022003.hstgr.cloud/webhook/send-email-to-lumina-${locale}`
+        , {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
